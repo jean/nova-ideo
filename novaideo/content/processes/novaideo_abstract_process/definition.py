@@ -22,7 +22,13 @@ from .behaviors import (
     DeselectEntity,
     CreateFile,
     SeeFile,
-    EditFile)
+    EditFile,
+    SeeFiles,
+    AddDeadLine,
+    EditDeadLine,
+    SeeOrderedProposal
+    )
+
 from novaideo import _
 
 
@@ -59,6 +65,22 @@ class NovaIdeoAbstractProcess(ProcessDefinition, VisualisableElement):
                                        description=_("Details"),
                                        title=_("Details"),
                                        groups=[]),
+                seefiles = ActivityDefinition(contexts=[SeeFiles],
+                                       description=_("See files"),
+                                       title=_("See files"),
+                                       groups=[]),
+                adddeadline = ActivityDefinition(contexts=[AddDeadLine],
+                                       description=_("Add the next deadline"),
+                                       title=_("Add the next deadline"),
+                                       groups=[]),
+                editdeadline = ActivityDefinition(contexts=[EditDeadLine],
+                                       description=_("Edit the current deadline"),
+                                       title=_("Edit the current deadline"),
+                                       groups=[]),
+                seeorderedproposal = ActivityDefinition(contexts=[SeeOrderedProposal],
+                                       description=_("Proposals to examine"),
+                                       title=_("Proposals to examine"),
+                                       groups=[]),
                 eg = ExclusiveGatewayDefinition(),
                 end = EndEventDefinition(),
         )
@@ -74,6 +96,14 @@ class NovaIdeoAbstractProcess(ProcessDefinition, VisualisableElement):
                 TransitionDefinition('editfile', 'eg'),
                 TransitionDefinition('pg', 'deselect'),
                 TransitionDefinition('deselect', 'eg'),
+                TransitionDefinition('pg', 'seefiles'),
+                TransitionDefinition('seefiles', 'eg'),
+                TransitionDefinition('pg', 'adddeadline'),
+                TransitionDefinition('adddeadline', 'eg'),
+                TransitionDefinition('pg', 'editdeadline'),
+                TransitionDefinition('editdeadline', 'eg'),
+                TransitionDefinition('pg', 'seeorderedproposal'),
+                TransitionDefinition('seeorderedproposal', 'eg'),
                 TransitionDefinition('eg', 'end'),
 
         )
