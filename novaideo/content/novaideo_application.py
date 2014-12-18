@@ -160,7 +160,8 @@ class NovaIdeoApplicationSchema(VisualisableElementSchema):
 
 
 class NovaIdeoApplicationPropertySheet(PropertySheet):
-    schema = select(NovaIdeoApplicationSchema(), ['participants_mini', 
+    schema = select(NovaIdeoApplicationSchema(), ['title',
+                                                  'participants_mini', 
                                                   'participants_maxi',
                                                   'participations_maxi',
                                                   'tokens_mini'])
@@ -190,7 +191,6 @@ class NovaIdeoApplication(VisualisableElement, Application):
 
     def __init__(self, **kwargs):
         super(NovaIdeoApplication, self).__init__(**kwargs)
-        self.title = 'NovaIdeo'
         self.initialization()
 
     def initialization(self):

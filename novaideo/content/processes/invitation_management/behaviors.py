@@ -73,8 +73,11 @@ class UploadUsers(InfiniteCardinality):
                 invitation=invitation,
                 user_title=getattr(invitation, 'user_title', ''),
                 invitation_url=url,
-                roles=", ".join(getattr(invitation, 'roles', [])))
-            mailer_send(subject='Invitation', recipients=[invitation.email], body=message )
+                roles=", ".join(getattr(invitation, 'roles', [])),
+                novaideo_title=request.root.title)
+            mailer_send(subject='Invitation', 
+                        recipients=[invitation.email], 
+                        body=message )
 
         return True
 
@@ -128,8 +131,11 @@ class InviteUsers(InfiniteCardinality):
                 invitation=invitation,
                 user_title=getattr(invitation, 'user_title', ''),
                 invitation_url=url,
-                roles=", ".join(getattr(invitation, 'roles', [])))
-            mailer_send(subject='Invitation', recipients=[invitation.email], body=message )
+                roles=", ".join(getattr(invitation, 'roles', [])),
+                novaideo_title=request.root.title)
+            mailer_send(subject='Invitation', 
+                        recipients=[invitation.email],
+                        body=message )
 
         return True
 
@@ -249,5 +255,3 @@ class EditInvitation(InfiniteCardinality):
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
-
-#TODO behaviors

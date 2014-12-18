@@ -505,7 +505,8 @@ class PublishProposal(ElementaryAction):
                 recipient_first_name=getattr(member, 'first_name', member.name),
                 recipient_last_name=getattr(member, 'last_name',''),
                 subject_title=context.title,
-                subject_url=url
+                subject_url=url,
+                novaideo_title=request.root.title
                  )
             mailer_send(subject=subject,
               recipients=[member.email],
@@ -669,7 +670,8 @@ class Alert(ElementaryAction):
                 recipient_first_name=getattr(member, 'first_name', member.name),
                 recipient_last_name=getattr(member, 'last_name',''),
                 subject_url=url,
-                subject_title=context.title
+                subject_title=context.title,
+                novaideo_title=request.root.title
                  )
             mailer_send(subject=subject, 
                 recipients=[member.email], 
@@ -1159,7 +1161,8 @@ class VotingPublication(ElementaryAction):
                 recipient_first_name=getattr(member, 'first_name', member.name),
                 recipient_last_name=getattr(member, 'last_name',''),
                 subject_title=context.title,
-                subject_url=url
+                subject_url=url,
+                novaideo_title=request.root.title
                  )
             mailer_send(subject=subject, 
                 recipients=[member.email], 
@@ -1215,7 +1218,8 @@ class Withdraw(InfiniteCardinality):
                 recipient_first_name=getattr(user, 'first_name', user.name),
                 recipient_last_name=getattr(user, 'last_name',''),
                 subject_title=context.title,
-                subject_url=request.resource_url(context, "@@index")
+                subject_url=request.resource_url(context, "@@index"),
+                novaideo_title=request.root.title
                  )
         mailer_send(subject=subject, 
             recipients=[user.email], 
@@ -1285,7 +1289,8 @@ class Resign(InfiniteCardinality):
                                                'first_name', next_user.name),
                         recipient_last_name=getattr(next_user, 'last_name',''),
                         subject_title=context.title,
-                        subject_url=url
+                        subject_url=url,
+                        novaideo_title=request.root.title
                  )
                 mailer_send(subject=subject, 
                     recipients=[next_user.email], 
@@ -1306,7 +1311,8 @@ class Resign(InfiniteCardinality):
                 recipient_first_name=getattr(user, 'first_name', user.name),
                 recipient_last_name=getattr(user, 'last_name',''),
                 subject_title=context.title,
-                subject_url=url
+                subject_url=url,
+                novaideo_title=request.root.title
                  )
         mailer_send(subject=subject, 
              recipients=[user.email], 
@@ -1363,7 +1369,8 @@ class Participate(InfiniteCardinality):
                 recipient_first_name=getattr(user, 'first_name', user.name),
                 recipient_last_name=getattr(user, 'last_name',''),
                 subject_title=context.title,
-                subject_url=request.resource_url(context, "@@index")
+                subject_url=request.resource_url(context, "@@index"),
+                novaideo_title=request.root.title
                  )
         mailer_send(subject=subject, recipients=[user.email], body=message)
 
@@ -1450,7 +1457,8 @@ class VotingAmendments(ElementaryAction):
                 recipient_first_name=getattr(member, 'first_name', member.name),
                 recipient_last_name=getattr(member, 'last_name',''),
                 subject_title=context.title,
-                subject_url=url
+                subject_url=url,
+                novaideo_title=request.root.title
                  )
             mailer_send(subject=subject, 
                  recipients=[member.email], 
@@ -1535,7 +1543,8 @@ class AmendmentsResult(ElementaryAction):
                 recipient_title=localizer.translate(_(getattr(member, 'user_title',''))),
                 recipient_first_name=getattr(member, 'first_name', member.name),
                 recipient_last_name=getattr(member, 'last_name',''),
-                message_result=result_body
+                message_result=result_body,
+                novaideo_title=request.root.title
                  )
             mailer_send(subject=subject, 
                  recipients=[member.email], 
@@ -1631,7 +1640,8 @@ class Amendable(ElementaryAction):
                 subject_url=url,
                 duration=duration,
                 isclosed=localizer.translate((isclosed and _('closed')) or\
-                                             _('open'))
+                                             _('open')),
+                novaideo_title=request.root.title
                  )
             mailer_send(subject=subject, 
                 recipients=[member.email], 

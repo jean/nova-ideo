@@ -424,7 +424,8 @@ class PresentIdea(InfiniteCardinality):
                 subject_title=getattr(context, 'title', context.name),
                 my_title=user_title,
                 my_first_name=user_first_name,
-                my_last_name=user_last_name
+                my_last_name=user_last_name,
+                novaideo_title=request.root.title
                  )
             mailer_send(subject=subject,
                   recipients=[member_email],

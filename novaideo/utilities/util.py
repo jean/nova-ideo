@@ -113,7 +113,8 @@ def send_alert_new_content(content):
             subject_title=content.title,
             subject_url=url,
             subject_type=localizer.translate(
-                           _("The " + content.__class__.__name__.lower()))
+                           _("The " + content.__class__.__name__.lower())),
+            novaideo_title=request.root.title
              )
         mailer_send(subject=subject, 
             recipients=[member.email], 
