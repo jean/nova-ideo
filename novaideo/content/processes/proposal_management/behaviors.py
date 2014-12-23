@@ -73,7 +73,7 @@ from novaideo.content.processes.idea_management.behaviors import (
     PresentIdea, 
     CommentIdea,
     Associate as AssociateIdea)
-from novaideo.utilities.text_analyzer import ITextAnalyzer
+from novaideo.utilities.text_analyzer import ITextAnalyzer, normalize_text
 from novaideo.utilities.util import connect, disconnect
 from novaideo.core import to_localized_time
 from novaideo.event import ObjectPublished
@@ -143,6 +143,7 @@ class CreateProposal(ElementaryAction):
 
         result.extend(newkeywords)
         proposal = appstruct['_object_data']
+        proposal.text = normalize_text(proposal.text)
         root.addtoproperty('proposals', proposal)
         proposal.setproperty('keywords_ref', result)
         proposal.state.append('draft')
@@ -204,7 +205,7 @@ class PublishAsProposal(ElementaryAction):
         for k in context.keywords_ref:
             proposal.addtoproperty('keywords_ref', k)
 
-        proposal.text = context.text
+        proposal.text = normalize_text(context.text)
         proposal.state.append('draft')
         #if ('to work' in context.state):
             #context.state = PersistentList(['published'])
@@ -316,6 +317,7 @@ class DuplicateProposal(ElementaryAction):
         related_ideas = appstruct.pop('related_ideas')
         appstruct['keywords_ref'] = result
         copy_of_proposal.set_data(appstruct)
+        copy_of_proposal.text = normalize_text(copy_of_proposal.text)
         copy_of_proposal.setproperty('originalentity', context)
         copy_of_proposal.state = PersistentList(['draft'])
         grant_roles(roles=(('Owner', copy_of_proposal), ))
@@ -401,6 +403,7 @@ class EditProposal(InfiniteCardinality):
                        'related_ideas',
                        CorrelationType.solid)
 
+        context.text = normalize_text(context.text)
         context.modified_at = datetime.datetime.today()
         keywords_ids = appstruct.pop('keywords')
         result, newkeywords = root.get_keywords(keywords_ids)
@@ -854,7 +857,7 @@ class ImproveProposal(InfiniteCardinality):
         data['title'] = context.title + \
                        localizer.translate(_('_Amended version ')) + \
                         str(getattr(context, '_amendments_counter', 1))
-        data['text'] = appstruct['text']
+        data['text'] = normalize_text(appstruct['text'])
         data['description'] = appstruct['description']
         keywords_ids = appstruct.pop('keywords')
         result, newkeywords = root.get_keywords(keywords_ids)
@@ -1127,7 +1130,7 @@ def decision_relation_validation(process, context):
 
 
 def decision_roles_validation(process, context):
-    return has_role(role=('System',))
+    return has_role(role=('Admin',))
 
 
 def decision_state_validation(process, context):
@@ -1141,7 +1144,6 @@ class VotingPublication(ElementaryAction):
     style_order = 5
     context = IProposal
     processs_relation_id = 'proposal'
-    #actionType = ActionType.system
     relation_validation = decision_relation_validation
     roles_validation = decision_roles_validation
     state_validation = decision_state_validation
@@ -1489,9 +1491,8 @@ class AmendmentsResult(ElementaryAction):
     amendments_vote_result_template = 'novaideo:views/proposal_management/templates/amendments_vote_result.pt'
     context = IProposal
     processs_relation_id = 'proposal'
-    #actionType = ActionType.system
     relation_validation = va_relation_validation
-    roles_validation = va_roles_validation
+    roles_validation = decision_roles_validation
     state_validation = ar_state_validation
 
     def _get_newversion(self, context, root, wg):
@@ -1567,6 +1568,7 @@ class AmendmentsResult(ElementaryAction):
                                             ITextAnalyzer,'text_analyzer')
             merged_text = text_analyzer.merge(context.text, 
                                  [a.text for a in amendments])
+            merged_text = normalize_text(merged_text)
             #TODO merged_keywords + merged_description
             copy_of_proposal = self._get_newversion(context, root, wg)
             self._send_ballot_result(copy_of_proposal, request, 

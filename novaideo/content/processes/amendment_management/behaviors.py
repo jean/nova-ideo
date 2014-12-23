@@ -34,7 +34,7 @@ from novaideo.content.processes.idea_management.behaviors import (
     PresentIdea, 
     CommentIdea, 
     Associate as AssociateIdea)
-from novaideo.utilities.text_analyzer import ITextAnalyzer
+from novaideo.utilities.text_analyzer import ITextAnalyzer, normalize_text
 from novaideo.utilities.amendment_viewer import IAmendmentViewer
 
 try:
@@ -85,6 +85,7 @@ class DuplicateAmendment(InfiniteCardinality):
         result.extend(newkeywords)
         appstruct['keywords_ref'] = result
         copy_of_amendment.set_data(appstruct)
+        copy_of_amendment.text = normalize_text(copy_of_amendment.text)
         copy_of_amendment.setproperty('originalentity', context)
         copy_of_amendment.state = PersistentList(['draft'])
         copy_of_amendment.setproperty('author', get_current())
@@ -175,6 +176,8 @@ class EditAmendment(InfiniteCardinality):
         result.extend(newkeywords)
         appstruct['keywords_ref'] = result
         context.set_data(appstruct)
+        context.text = normalize_text(context.text)
+        context.reindex()
         return True
 
     def redirect(self, context, request, **kw):
