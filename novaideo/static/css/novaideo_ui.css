@@ -251,11 +251,13 @@ margin-bottom:15px;
 }
 
 del {
-  background-color: #ef827d;
+     background-image: linear-gradient(45deg, #ef827d 46%, #ef3128 100%);
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 ins {
-  background-color: #89e189;
+     background-image: linear-gradient(45deg, #89e189 46%, #4eaf4e 100%);
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /*.amendment-diff del {
@@ -281,18 +283,21 @@ ins {
     margin-bottom: 10px;
 }
 
+
 .legend-carre-del{
-	width:20px;
-	height:20px;
-	background:#ef827d;
-    display: inline-block;; 
+     width:30px;
+     height:20px;
+     background-image: linear-gradient(45deg, #ef827d 46%, #ef3128 100%);
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+     display: inline-block;;
 }
 
 .legend-carre-ins{
-	width:20px;
-	height:20px;
-	background:#89e189;
-        display: inline-block;; 
+     width:30px;
+     height:20px;
+     background-image: linear-gradient(45deg, #89e189 46%, #4eaf4e 100%);
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+     display: inline-block;
 }
 
 .object-well{
@@ -391,13 +396,28 @@ ins {
     font-weight: normal;
 }
 
-.amendment-trimmed-text {
+.trimmed-text {
     height: 160px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.28) inset;
     padding: 12px;
 }
+
+.text-removed{
+     background-image: linear-gradient(45deg, #ef827d 46%, #ef3128 100%);
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-added{
+     background-image: linear-gradient(45deg, #89e189 46%, #4eaf4e 100%);
+     border-radius: 10px;
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+     font-size: 12px;
+     margin: 0 4px;
+     padding: 4px;
+}
+
 
 .amendment-intention {
   height: 189px
@@ -420,6 +440,14 @@ ins {
 .modal-amendments-vote form .panel{
     box-shadow: 5px 6px 5px rgba(25, 40, 21, 0.2);
     background-color: #f2f6fa;
+}
+
+.voting-amendments-legend{
+   margin-left: -127px
+}
+
+#amendments-legend .text-added{
+    margin: -1px 4px 3px;
 }
 
 .correction-favour-vote {
