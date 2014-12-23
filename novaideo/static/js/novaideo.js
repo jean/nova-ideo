@@ -132,6 +132,8 @@ function init_result_scroll(){
 };
 
 $(document).ready(function(){
+  
+  $('input, textarea').placeholder();
 
   set_visited();
   
