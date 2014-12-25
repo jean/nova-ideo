@@ -64,7 +64,7 @@ class AcceptInvitation(ElementaryAction):
         context.state.remove('pending')
         context.state.append('accepted')
         root.delfromproperty('invitations', context)
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         root = getSite()
@@ -92,7 +92,7 @@ class RefuseInvitation(ElementaryAction):
     def start(self, context, request, appstruct, **kw):
         context.state.remove('pending')
         context.state.append('refused')
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
@@ -119,7 +119,7 @@ class RemoveInvitation(ElementaryAction):
     def start(self, context, request, appstruct, **kw):
         root = getSite()
         root.delfromproperty('invitations', context)
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         root = getSite()
@@ -163,7 +163,7 @@ class ReinviteUser(ElementaryAction):
                     body=message )
         context.state.remove('refused')
         context.state.append('pending')
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
@@ -205,7 +205,7 @@ class RemindInvitation(InfiniteCardinality):
         mailer_send(subject='Invitation', 
             recipients=[context.email], 
             body=message )
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))

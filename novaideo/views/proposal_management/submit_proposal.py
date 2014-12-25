@@ -33,6 +33,7 @@ class SubmitProposalStudyReport(BasicView):
         result['coordinates'] = {self.coordinates:[item]}
         return result
 
+
 class SubmitProposalFormView(FormView):
     title = _('Submit')
     name = 'formsubmitproposal'

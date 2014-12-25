@@ -41,7 +41,7 @@ class AddOrganizations(InfiniteCardinality):
                             properties={'title':('String', False),
                                         'description':('String', False)})
         root.setproperty('organizations', organizations)
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context))
@@ -69,7 +69,7 @@ class CreatOrganizations(InfiniteCardinality):
             root.addtoproperty('organizations', organization)
             #send mail
 
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context))
@@ -91,7 +91,7 @@ class EditOrganizations(InfiniteCardinality):
     processsecurity_validation = edit_processsecurity_validation
 
     def start(self, context, request, appstruct, **kw):
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context))
@@ -114,7 +114,7 @@ class SeeOrganizations(InfiniteCardinality):
     processsecurity_validation = seeorgs_processsecurity_validation
 
     def start(self, context, request, appstruct, **kw):
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context))
@@ -134,7 +134,7 @@ class SeeOrganization(InfiniteCardinality):
     processsecurity_validation = see_processsecurity_validation
 
     def start(self, context, request, appstruct, **kw):
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
@@ -156,7 +156,7 @@ class EditOrganization(InfiniteCardinality):
     processsecurity_validation = editorg_processsecurity_validation
 
     def start(self, context, request, appstruct, **kw):
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))

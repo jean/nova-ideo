@@ -7,11 +7,13 @@
 from pyramid.httpexceptions import HTTPFound
 
 from substanced.util import get_oid
+
 from dace.util import find_service, getSite
 from dace.objectofcollaboration.principal.util import has_role
 from dace.processinstance.activity import (
     InfiniteCardinality,
     ActionType)
+
 from novaideo.ips.xlreader import create_object_from_xl
 from novaideo.content.interface import INovaIdeoApplication, IInvitation
 from novaideo.content.invitation import Invitation
@@ -20,6 +22,7 @@ from novaideo.mail import INVITATION_MESSAGE
 from novaideo import _
 from ..user_management.behaviors import global_user_processsecurity
 from novaideo.core import acces_action
+
 
 def uploaduser_relation_validation(process, context):
     return True
@@ -79,11 +82,10 @@ class UploadUsers(InfiniteCardinality):
                         recipients=[invitation.email], 
                         body=message )
 
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context))
-
 
 
 def inviteuser_relation_validation(process, context):
@@ -137,16 +139,15 @@ class InviteUsers(InfiniteCardinality):
                         recipients=[invitation.email],
                         body=message )
 
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context))
 
 
-
-
 def seeinv_processsecurity_validation(process, context):
     return has_role(role=('Anonymous',)) and not has_role(role=('Administrator',))
+
 
 @acces_action()
 class SeeInvitation(InfiniteCardinality):
@@ -157,7 +158,7 @@ class SeeInvitation(InfiniteCardinality):
     processsecurity_validation = seeinv_processsecurity_validation
 
     def start(self, context, request, appstruct, **kw):
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context))
@@ -188,7 +189,7 @@ class SeeInvitations(InfiniteCardinality):
     state_validation = seeinvs_state_validation
 
     def start(self, context, request, appstruct, **kw):
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context))
@@ -219,7 +220,7 @@ class EditInvitations(InfiniteCardinality):
     state_validation = edit_state_validation
 
     def start(self, context, request, appstruct, **kw):
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context))
@@ -251,7 +252,7 @@ class EditInvitation(InfiniteCardinality):
     state_validation = editinv_state_validation
 
     def start(self, context, request, appstruct, **kw):
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
