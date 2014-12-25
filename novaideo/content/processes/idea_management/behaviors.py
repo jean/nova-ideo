@@ -69,11 +69,10 @@ class CreateIdea(InfiniteCardinality):
         grant_roles(roles=(('Owner', idea), ))
         idea.setproperty('author', get_current())
         idea.reindex()
-        self.newcontext = idea
-        return True
+        return {'newcontext': idea}
 
     def redirect(self, context, request, **kw):
-        return HTTPFound(request.resource_url(self.newcontext, "@@index"))
+        return HTTPFound(request.resource_url(kw['newcontext'], "@@index"))
 
 
 def duplicate_processsecurity_validation(process, context):
@@ -112,11 +111,10 @@ class DuplicateIdea(InfiniteCardinality):
         copy_of_idea.set_data(appstruct)
         copy_of_idea.reindex()
         context.reindex()
-        self.newcontext = copy_of_idea
-        return True
+        return {'newcontext': copy_of_idea}
 
     def redirect(self, context, request, **kw):
-        return HTTPFound(request.resource_url(self.newcontext, "@@index"))
+        return HTTPFound(request.resource_url(kw['newcontext'], "@@index"))
 
 
 def del_roles_validation(process, context):
@@ -146,7 +144,7 @@ class DelIdea(InfiniteCardinality):
     def start(self, context, request, appstruct, **kw):
         root  = getSite()
         root.delfromproperty('ideas', context)
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         root = getSite()
@@ -216,7 +214,7 @@ class EditIdea(InfiniteCardinality):
             if recuperate_actions:
                 recuperate_actions[0].execute(context, request, appstruct, **kw)
 
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
@@ -255,11 +253,10 @@ class PublishIdea(InfiniteCardinality):
         context.state.append('published')
         context.reindex()
         request.registry.notify(ObjectPublished(object=context))
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
-
 
 
 def ab_roles_validation(process, context):
@@ -288,7 +285,7 @@ class AbandonIdea(InfiniteCardinality):
         context.state.remove('to work')
         context.state.append('archived')
         context.reindex()
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
@@ -322,7 +319,7 @@ class RecuperateIdea(InfiniteCardinality):
         context.state.remove('archived')
         context.state.append('to work')
         context.reindex()
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
@@ -363,7 +360,7 @@ class CommentIdea(InfiniteCardinality):
             comment.setproperty('related_correlation', correlation)
 
         context.reindex()
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
@@ -433,7 +430,7 @@ class PresentIdea(InfiniteCardinality):
             if not (member is user):
                 context._email_persons_contacted.append(member_email)
 
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
@@ -456,7 +453,7 @@ class Associate(InfiniteCardinality):
         correlation.setproperty('author', get_current())
         root = getSite()
         root.addtoproperty('correlations', correlation)
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
@@ -475,7 +472,7 @@ class SeeIdea(InfiniteCardinality):
     processsecurity_validation = seeidea_processsecurity_validation
 
     def start(self, context, request, appstruct, **kw):
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
@@ -496,7 +493,7 @@ class CompareIdea(InfiniteCardinality):
     processsecurity_validation = compare_processsecurity_validation
 
     def start(self, context, request, appstruct, **kw):
-        return True
+        return {}
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
