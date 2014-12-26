@@ -180,3 +180,52 @@ Bonjour {recipient_title} {recipient_last_name},
 {subject_type} {subject_title} qui contient un des mots clés faisant partie de vos centres d'intérêt vient d'être publiée. Vous pouvez la consulter sous {subject_url}
 
 """+ PORTAL_SIGNATURE
+
+
+ARCHIVEIDEA_SUBJECT = u"""Décision des modérateur sur l'idée {subject_title}"""
+
+
+ARCHIVEIDEA_MESSAGE = u"""
+Bonjour {recipient_title} {recipient_last_name},
+
+L'idée {subject_title} viens d'être archivée par les modérateurs pour la raison suivante: 
+
+{explanation}
+
+"""+ PORTAL_SIGNATURE
+
+
+ALERTOPINION_SUBJECT = u"""Avis des modérateur sur la proposition {subject_title}"""
+
+
+ALERTOPINION_MESSAGE = u"""
+Bonjour {recipient_title} {recipient_last_name},
+
+les modérateurs ont émis un avis {opinion} sur la proposition {subject_title}: 
+
+{explanation}
+
+"""+ PORTAL_SIGNATURE
+
+
+PUBLISHEDIDEA_SUBJECT = u"""Décision des modérateur sur l'idée {subject_title}"""
+
+
+PUBLISHEDIDEA_MESSAGE = u"""
+Bonjour {recipient_title} {recipient_last_name},
+
+L'idée {subject_title} viens d'être publiée par les modérateurs.
+
+"""+ PORTAL_SIGNATURE
+
+
+PROPOSALREMOVED_SUBJECT = u"""Suppression de la proposition {subject_title}"""
+
+
+PROPOSALREMOVED_MESSAGE = u"""
+Bonjour {recipient_title} {recipient_last_name},
+
+La proposition {subject_title} viens d'être supprimée par les modérateurs pour le motif suivant.
+{explanation}
+
+"""+ PORTAL_SIGNATURE 
