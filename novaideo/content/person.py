@@ -51,7 +51,6 @@ def titles_choice(node, kw):
 def email_validator(node, kw):
     context = node.bindings['context']
     request = node.bindings['request']
-    root = getSite()
     adapter = request.registry.queryMultiAdapter(
         (context, request),
         IUserLocator
@@ -59,16 +58,7 @@ def email_validator(node, kw):
     if adapter is None:
         adapter = DefaultUserLocator(context, request)
     user = adapter.get_user_by_email(kw)
-    if user is context:
-        user = None
-
-    invitation = None
-    for invit in root.invitations:
-        if invit.email == kw and not (context is invit):
-            invitation = invit
-            break
-
-    if user is not None or invitation is not None:
+    if user and user is not context:
         raise colander.Invalid(node,
                 _('${email} email address already in use',
                   mapping={'email': kw}))

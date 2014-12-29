@@ -21,10 +21,6 @@ STATES_PARTICIPANT_MAPPING = {
 	    'explanation': _('Explanation'),
 	    #Ideas
 	    'to work': _('To work'),
-	    #Invitation
-	    'pending': _('Pending'),
-	    'accepted': _('Accepted'),
-	    'refused': _('Refused'),
 	    #Proposal
 	    'open to a working group': _('Open to a working group'),
 	    'votes for publishing': _('Votes for publishing'),
@@ -53,10 +49,6 @@ STATES_MEMBER_MAPPING = {
 	    'explanation': _('Explanation'),
 	    #Ideas
 	    'to work': _('To work'),
-	    #Invitation
-	    'pending': _('Pending'),
-	    'accepted': _('Accepted'),
-	    'refused': _('Refused'),
 	    #Proposal
 	    'open to a working group': _('Open to a working group'),
 	    'votes for publishing': _('Votes for publishing'),
