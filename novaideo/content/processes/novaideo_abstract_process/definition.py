@@ -19,10 +19,7 @@ from pontus.core import VisualisableElement
 
 from .behaviors import (
     SelectEntity,
-    DeselectEntity,
-    AddDeadLine,
-    EditDeadLine,
-    SeeOrderedProposal
+    DeselectEntity
     )
 
 from novaideo import _
@@ -49,18 +46,6 @@ class NovaIdeoAbstractProcess(ProcessDefinition, VisualisableElement):
                                     description=_("Remove from my selections"),
                                     title=_("Remove from my selections"),
                                     groups=[]),
-                adddeadline = ActivityDefinition(contexts=[AddDeadLine],
-                                       description=_("Add the next deadline"),
-                                       title=_("Add the next deadline"),
-                                       groups=[]),
-                editdeadline = ActivityDefinition(contexts=[EditDeadLine],
-                                       description=_("Edit the current deadline"),
-                                       title=_("Edit the current deadline"),
-                                       groups=[]),
-                seeorderedproposal = ActivityDefinition(contexts=[SeeOrderedProposal],
-                                       description=_("Proposals to examine"),
-                                       title=_("Proposals to examine"),
-                                       groups=[]),
                 eg = ExclusiveGatewayDefinition(),
                 end = EndEventDefinition(),
         )
@@ -70,12 +55,6 @@ class NovaIdeoAbstractProcess(ProcessDefinition, VisualisableElement):
                 TransitionDefinition('select', 'eg'),
                 TransitionDefinition('pg', 'deselect'),
                 TransitionDefinition('deselect', 'eg'),
-                TransitionDefinition('pg', 'adddeadline'),
-                TransitionDefinition('adddeadline', 'eg'),
-                TransitionDefinition('pg', 'editdeadline'),
-                TransitionDefinition('editdeadline', 'eg'),
-                TransitionDefinition('pg', 'seeorderedproposal'),
-                TransitionDefinition('seeorderedproposal', 'eg'),
                 TransitionDefinition('eg', 'end'),
 
         )
