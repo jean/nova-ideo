@@ -19,13 +19,12 @@ from substanced.principal import DefaultUserLocator
 from dace.util import getSite, find_entities, find_catalog
 from dace.objectofcollaboration.principal import User
 from dace.descriptors import (
-    SharedUniqueProperty,
     CompositeMultipleProperty,
     CompositeUniqueProperty,
     SharedMultipleProperty)
 from pontus.core import VisualisableElement, VisualisableElementSchema
 from pontus.widget import FileWidget, Select2Widget
-from pontus.file import Image, ObjectData, Object as ObjectType
+from pontus.file import Image, ObjectData
 
 from novaideo.core import (
     SearchableEntity,
@@ -38,20 +37,6 @@ from novaideo import _
 
 
 DEFAULT_LOCALE = 'fr'
-
-
-@colander.deferred
-def organization_choice(node, kw):
-    context = node.bindings['context']
-    values = []
-    root = getSite()
-    if root is None:
-        root = context.__parent__.__parent__
-
-    prop = sorted(root.organizations, key=lambda p: p.title)
-    values = [(i, i.title) for i in prop]
-    values.insert(0, ('', _('- Select -')))
-    return Select2Widget(values=values)
 
 
 @colander.deferred
@@ -194,21 +179,15 @@ class PersonSchema(VisualisableElementSchema, UserSchema, SearchableEntitySchema
         title=_("Password")
         )
 
-    organization = colander.SchemaNode(
-        ObjectType(),
-        widget=organization_choice,
-        missing=None,
-        title=_('Organization'),
-        )
-
-
     @invariant
     def person_name_invariant(self, appstruct):
         context = self.bindings['context']
         name = ''
-        if 'first_name' in appstruct and appstruct['first_name'] is not colander.null:
+        if 'first_name' in appstruct and \
+           appstruct['first_name'] is not colander.null:
             name = name + appstruct['first_name']
-            if 'last_name' in appstruct and appstruct['last_name'] is not colander.null:
+            if 'last_name' in appstruct and \
+               appstruct['last_name'] is not colander.null:
                 name = name + ' ' + appstruct['last_name']
         
         if not name:
@@ -238,7 +217,6 @@ class Person(VisualisableElement, User, SearchableEntity, CorrelableEntity):
     name = renamer()
     tokens = CompositeMultipleProperty('tokens')
     tokens_ref = SharedMultipleProperty('tokens_ref')
-    organization = SharedUniqueProperty('organization', 'members')
     picture = CompositeUniqueProperty('picture')
     ideas = SharedMultipleProperty('ideas', 'author')
     selections = SharedMultipleProperty('selections')

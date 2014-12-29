@@ -15,13 +15,6 @@ PORTAL_PRESENTATION = u"""{novaideo_title} est une application participative per
 
 """
 
-INVITATION_MESSAGE = u"""
-Bonjour {recipient_title} {recipient_last_name},
-
-{user_title} {invitation.last_name} vous êtes invité à rejoindre l\'application collaborative {novaideo_title} en tant que {roles}. Veuilliez visiter ce lien {invitation_url} afin de valider votre invitation.
-""" + PORTAL_SIGNATURE
-
-
 PRESENTATION_IDEA_MESSAGE = u"""
 Bonjour,
 

@@ -37,14 +37,6 @@ class Examiner(Role):
     pass
 
 
-@role(name='OrganizationResponsible',
-      superiors=[Administrator],
-      lowers=[Collaborator],
-      islocal=True)
-class OrganizationResponsible(Role):
-    pass
-
-
 @role(name='Participant',
       superiors=[Administrator],
       lowers=[Collaborator, Observer],

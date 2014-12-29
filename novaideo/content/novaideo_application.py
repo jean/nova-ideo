@@ -19,10 +19,8 @@ from pontus.widget import SequenceWidget, LineWidget, TableWidget
 from pontus.schema import omit, select
 
 from .working_group import WorkingGroupSchema, WorkingGroup
-from .organization import OrganizationSchema, Organization
 from .idea import IdeaSchema, Idea
 from .interface import INovaIdeoApplication
-from .invitation import InvitationSchema, Invitation
 from .keyword import KeywordSchema, Keyword
 from novaideo import _
 
@@ -93,28 +91,12 @@ class NovaIdeoApplicationSchema(VisualisableElementSchema):
         title=_('Amendment intentions'),
         )
 
-    invitations = colander.SchemaNode(
-        colander.Sequence(),
-        omit(InvitationSchema(factory=Invitation,
-                               editable=True,
-                               name=_('Invitations')),['_csrf_token_']),
-        title=_('List of invitation'),
-        )
-
     working_groups = colander.SchemaNode(
         colander.Sequence(),
         omit(WorkingGroupSchema(factory=WorkingGroup,
                 editable=True,
                 name=_('Working group')),['_csrf_token_']),
         title=_('Working groups'),
-        )
-
-    organizations = colander.SchemaNode(
-        colander.Sequence(),
-        omit(OrganizationSchema(factory=Organization,
-                editable=True,
-                name=_('Organization')),['_csrf_token_']),
-        title=_('Organizations'),
         )
 
     keywords = colander.SchemaNode(
@@ -182,8 +164,6 @@ class NovaIdeoApplication(VisualisableElement, Application):
     name = renamer()
     working_groups = CompositeMultipleProperty('working_groups')
     proposals = CompositeMultipleProperty('proposals')
-    organizations = CompositeMultipleProperty('organizations')
-    invitations = CompositeMultipleProperty('invitations')
     ideas = CompositeMultipleProperty('ideas')
     keywords = CompositeMultipleProperty('keywords')
     correlations = CompositeMultipleProperty('correlations')

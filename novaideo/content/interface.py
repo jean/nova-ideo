@@ -86,10 +86,6 @@ class ICorrelation(ICommentable):
     pass
 
 
-class IInvitation(Interface):
-    pass
-
-
 class IKeyword(Interface):
     pass
 
@@ -116,10 +112,6 @@ class IProposal(ICommentable,
 
 
 class IWorkingGroup(Interface):
-    pass
-
-
-class IOrganization(Interface):
     pass
 
 
