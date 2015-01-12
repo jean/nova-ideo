@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-01-09 17:07+0100\n"
+"POT-Creation-Date: 2015-01-12 10:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1377,6 +1377,10 @@ msgstr ""
 #: ./novaideo/views/novaideo_view_manager/see_my_participations.py:30
 #: ./novaideo/content/processes/novaideo_view_manager/definition.py:57
 msgid "My participations"
+msgstr ""
+
+#: ./novaideo/views/novaideo_view_manager/templates/search_result.pt:3
+msgid "elements found"
 msgstr ""
 
 #: ./novaideo/views/novaideo_view_manager/templates/see_proposal.pt:56

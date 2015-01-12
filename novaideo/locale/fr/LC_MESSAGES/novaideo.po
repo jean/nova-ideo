@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-01-09 17:07+0100\n"
+"POT-Creation-Date: 2015-01-12 10:00+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: SOUISSI <amensouissi@ecreall.com>\n"
 "Language-Team: \n"
@@ -1338,6 +1338,10 @@ msgstr "Mes contenus"
 #: novaideo/content/processes/novaideo_view_manager/definition.py:57
 msgid "My participations"
 msgstr "Mes groupes de travail"
+
+#: novaideo/views/novaideo_view_manager/templates/search_result.pt:3
+msgid "elements found"
+msgstr "elements trouvés"
 
 #: novaideo/views/novaideo_view_manager/templates/see_proposal.pt:56
 msgid "Vous avez atteint la limite de participations autorisées. Afin de pouvoir soumettre votre proposition, veuillez démissionner de l'un de"
