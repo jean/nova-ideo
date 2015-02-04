@@ -15,13 +15,6 @@ def homepage_connected_condition(context, user):
     return not isinstance(user, Anonymous) 
 
 
-def idea_submited_owner(context, user):
-    return has_role(role=('Owner', context))
-
-
-def idea_submited_moderator(context, user):
-    return has_role(role=('Moderator', ))
-
 
 CONTEXTUAL_HELP_MESSAGES = {
 	(NovaIdeoApplication, 'any', ''): [
@@ -73,12 +66,6 @@ CONTEXTUAL_HELP_MESSAGES = {
 	(Idea, 'archived', 'index'): [
 	   (None, 'novaideo:views/templates/panels/'
 	   	                    'contextual_help_messages/idea_archived.pt', 1)],
-
-	(Idea, 'submited', 'index'): [
-	   (idea_submited_owner, 'novaideo:views/templates/panels/'
-	   	                    'contextual_help_messages/idea_submited_owner.pt', 1),
-	   (idea_submited_moderator, 'novaideo:views/templates/panels/'
-	   	                'contextual_help_messages/idea_submited_moderator.pt', 1)],
 
 	(Idea, 'published', 'index'): [
 	   (None, 'novaideo:views/templates/panels/'
