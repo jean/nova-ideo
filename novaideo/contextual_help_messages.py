@@ -16,6 +16,10 @@ def homepage_connected_condition(context, user):
 
 
 
+def proposal_first_vote(context, user):
+    return context.creator and getattr(context.creator, 'iteration', 1) == 1
+
+
 CONTEXTUAL_HELP_MESSAGES = {
 	(NovaIdeoApplication, 'any', ''): [
 	   (homepage_condition, 'novaideo:views/templates/panels/'
@@ -54,6 +58,10 @@ CONTEXTUAL_HELP_MESSAGES = {
 	(Proposal, 'open to a working group', 'index'): [
 	   (None, 'novaideo:views/templates/panels/'
 	   	      'contextual_help_messages/proposal_open_to_a_working_group.pt', 1)],
+
+	(Proposal, 'votes for publishing', 'index'): [
+	   (proposal_first_vote, 'novaideo:views/templates/panels/'
+	   	      'contextual_help_messages/proposal_first_vote.pt', 1)],
 
 	(Person, 'any', 'index'): [
 	   (None, 'novaideo:views/templates/panels/'
