@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg4708"
+   viewBox="0 0 18 32"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   width="100%"
+   height="100%"
+   sodipodi:docname="idea_picto.svg">
+  <defs
+     id="defs17" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     id="namedview15"
+     showgrid="false"
+     inkscape:zoom="15.08942"
+     inkscape:cx="-8.2910661"
+     inkscape:cy="3.5731734"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4708" />
+  <path
+     id="rect4735"
+     d="m -15.701363,10.763002 c -0.07799,1.38e-4 -8.501488,0.03576 -8.501488,8.898997 0,5.705715 3.872221,7.820558 3.601913,8.316074 l 0.8475,3.005959 h 0.185391 c -0.658979,0 -1.191833,0.532791 -1.191833,1.191821 0,0.658981 0.532809,1.191841 1.191833,1.191841 h 1.377164 l -1.827414,0.701842 c -0.615041,0.236587 -0.925177,0.934301 -0.688591,1.549367 0.236594,0.615036 0.921093,0.911969 1.536081,0.675353 l 7.362658,-2.833826 c 0.07303,-0.02807 0.134736,-0.066 0.198632,-0.105945 0.0043,-2.57e-4 0.009,3.84e-4 0.01323,0 0.616367,-0.046 1.099122,-0.550041 1.099122,-1.178543 0,-0.640895 -0.504954,-1.163678 -1.138831,-1.191821 l 0.847499,-3.005959 c -0.270315,-0.495585 3.6019126,-2.610448 3.6019126,-8.316074 0,-8.862509 -8.4234636,-8.89813 -8.5014886,-8.898997 z m -3.045747,2.065748 c -2.54e-4,0.0089 0,0.01714 0,0.0265 0.431509,-0.106902 0.631332,0.595797 0.07017,0.761754 -1.687612,0.477115 -2.692116,2.615048 -2.692116,2.615048 -0.345898,0.60027 -0.995816,0.187087 -0.749248,-0.24168 0.288744,-0.782845 1.529651,-2.724964 3.37123,-3.161572 z m 6.554866,21.333433 c -0.154467,-0.0049 -0.309718,0.02029 -0.463474,0.0794 l -7.362657,2.833835 c -0.615041,0.236597 -0.925178,0.921101 -0.688591,1.536078 0.08873,0.230657 0.249383,0.411764 0.436991,0.542938 0.09999,0.122515 0.214873,0.232568 0.35754,0.317817 l 3.495912,2.079046 c 0.237446,0.194485 0.53182,0.306183 0.834257,0.304567 0.294991,0.0049 0.585143,-0.09555 0.821016,-0.278078 l 3.522411,-2.105545 c 0.649344,-0.388024 0.871741,-1.233017 0.503198,-1.893623 -0.368496,-0.660626 -1.191309,-0.877994 -1.840706,-0.489951 l -3.005955,1.787706 -0.979913,-0.582657 4.753953,-1.827426 c 0.615039,-0.236587 0.925175,-0.921091 0.688589,-1.536078 -0.177442,-0.461274 -0.609227,-0.753332 -1.072623,-0.768049 z"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;stroke:#000000;stroke-width:0.48850194;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title />
+        <dc:date>2013-10-21T15:14:24</dc:date>
+        <dc:description>Light Bulb Icon</dc:description>
+        <dc:source>https://openclipart.org/detail/185271/light-bulb-icon-2-by-minduka-185271</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Minduka</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Light Bulb Icon</rdf:li>
+            <rdf:li>idea</rdf:li>
+            <rdf:li>lamp</rdf:li>
+            <rdf:li>light</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
