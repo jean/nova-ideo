@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-02-13 12:31+0100\n"
+"POT-Creation-Date: 2015-02-13 15:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,7 +117,7 @@ msgstr ""
 #: ./novaideo/content/processes/amendment_management/behaviors.py:508
 #: ./novaideo/content/processes/novaideo_view_manager/definition.py:64
 #: ./novaideo/content/processes/novaideo_view_manager/definition.py:65
-#: ./novaideo/content/processes/novaideo_view_manager/behaviors.py:140
+#: ./novaideo/content/processes/novaideo_view_manager/behaviors.py:139
 #: ./novaideo/content/processes/correlation_management/behaviors.py:70
 msgid "Details"
 msgstr ""
@@ -835,7 +835,7 @@ msgstr ""
 
 #: ./novaideo/views/proposal_management/edit_proposal.py:45
 #: ./novaideo/views/amendment_management/explanation_amendment.py:26
-#: ./novaideo/views/novaideo_view_manager/search.py:258
+#: ./novaideo/views/novaideo_view_manager/search.py:269
 #: ./novaideo/content/correlation.py:54 ./novaideo/content/idea.py:44
 #: ./novaideo/content/comment.py:33 ./novaideo/content/person.py:46
 msgid "- Select -"
@@ -1367,36 +1367,36 @@ msgstr ""
 msgid "My supports"
 msgstr ""
 
-#: ./novaideo/views/novaideo_view_manager/search.py:41
-#: ./novaideo/content/novaideo_application.py:115
-msgid "Idea"
+#: ./novaideo/views/novaideo_view_manager/search.py:45
+#: ./novaideo/content/novaideo_application.py:116
+msgid "Ideas"
 msgstr ""
 
-#: ./novaideo/views/novaideo_view_manager/search.py:42
-msgid "Proposal"
+#: ./novaideo/views/novaideo_view_manager/search.py:46
+msgid "Proposals"
 msgstr ""
 
-#: ./novaideo/views/novaideo_view_manager/search.py:43
-msgid "Person"
+#: ./novaideo/views/novaideo_view_manager/search.py:47
+msgid "Persons"
 msgstr ""
 
-#: ./novaideo/views/novaideo_view_manager/search.py:91
+#: ./novaideo/views/novaideo_view_manager/search.py:102
 #: ./novaideo/views/novaideo_view_manager/templates/search_textinput.pt:9
 #: ./novaideo/content/processes/novaideo_view_manager/definition.py:44
 #: ./novaideo/content/processes/novaideo_view_manager/definition.py:45
 msgid "Search"
 msgstr ""
 
-#: ./novaideo/views/novaideo_view_manager/search.py:193
+#: ./novaideo/views/novaideo_view_manager/search.py:204
 msgid "Nova-Ideo contents"
 msgstr ""
 
-#: ./novaideo/views/novaideo_view_manager/search.py:240
+#: ./novaideo/views/novaideo_view_manager/search.py:251
 #, python-format
 msgid "${novaideo_title} contents"
 msgstr ""
 
-#: ./novaideo/views/novaideo_view_manager/search.py:79
+#: ./novaideo/views/novaideo_view_manager/search.py:90
 msgid "The keyword search is done using commas between keywords."
 msgstr ""
 
@@ -1545,10 +1545,6 @@ msgstr ""
 msgid "Working groups"
 msgstr ""
 
-#: ./novaideo/content/novaideo_application.py:116
-msgid "Ideas"
-msgstr ""
-
 #: ./novaideo/content/novaideo_application.py:121
 msgid "Minimum number of participants for a working group"
 msgstr ""
@@ -1580,6 +1576,10 @@ msgstr ""
 
 #: ./novaideo/content/novaideo_application.py:87
 msgid "Amendment intention"
+msgstr ""
+
+#: ./novaideo/content/novaideo_application.py:115
+msgid "Idea"
 msgstr ""
 
 #: ./novaideo/content/idea.py:86
