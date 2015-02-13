@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-02-13 10:16+0100\n"
+"POT-Creation-Date: 2015-02-13 11:10+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -410,7 +410,8 @@ msgstr ""
 #: ./novaideo/views/templates/idea_list_element.pt:8
 #: ./novaideo/views/templates/proposal_list_element.pt:8
 #: ./novaideo/views/templates/idea_result.pt:43
-#: ./novaideo/views/templates/proposal_result.pt:43
+#: ./novaideo/views/templates/proposal_result.pt:66
+#: ./novaideo/views/templates/proposal_result.pt:81
 #: ./novaideo/views/templates/amendment_result.pt:56
 #: ./novaideo/views/amendment_management/templates/see_amendment.pt:52
 #: ./novaideo/views/amendment_management/templates/description_amendments.pt:20
@@ -1010,12 +1011,13 @@ msgid ""
 msgstr ""
 
 #: ./novaideo/views/templates/idea_result.pt:40
-#: ./novaideo/views/templates/proposal_result.pt:40
+#: ./novaideo/views/templates/proposal_result.pt:63
+#: ./novaideo/views/templates/proposal_result.pt:78
 msgid "Modify the"
 msgstr ""
 
 #: ./novaideo/views/templates/idea_result.pt:45
-#: ./novaideo/views/templates/proposal_result.pt:45
+#: ./novaideo/views/templates/proposal_result.pt:68
 #: ./novaideo/views/templates/amendment_result.pt:58
 msgid "by"
 msgstr ""
@@ -1023,6 +1025,20 @@ msgstr ""
 #: ./novaideo/views/templates/ajax_form.pt:25
 #: ./novaideo/views/novaideo_view_manager/templates/search_form.pt:18
 msgid "There was a problem with your submission"
+msgstr ""
+
+#: ./novaideo/views/templates/proposal_result.pt:40
+#: ./novaideo/views/novaideo_view_manager/templates/see_proposal.pt:118
+#: ./novaideo/content/novaideo_application.py:98
+msgid "Working group"
+msgstr ""
+
+#: ./novaideo/views/templates/proposal_result.pt:83
+msgid "by its"
+msgstr ""
+
+#: ./novaideo/views/templates/proposal_result.pt:85
+msgid "working group"
 msgstr ""
 
 #: ./novaideo/views/templates/amendment_result.pt:31
@@ -1391,11 +1407,6 @@ msgstr ""
 
 #: ./novaideo/views/novaideo_view_manager/templates/see_proposal.pt:58
 msgid "vos groupes de travail actuels"
-msgstr ""
-
-#: ./novaideo/views/novaideo_view_manager/templates/see_proposal.pt:118
-#: ./novaideo/content/novaideo_application.py:98
-msgid "Working group"
 msgstr ""
 
 #: ./novaideo/views/novaideo_view_manager/templates/see_proposal.pt:139
