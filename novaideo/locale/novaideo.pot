@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-02-13 11:39+0100\n"
+"POT-Creation-Date: 2015-02-13 12:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -451,24 +451,41 @@ msgstr ""
 msgid "Activate the member"
 msgstr ""
 
-#: ./novaideo/views/user_management/reset_password.py:26
-#: ./novaideo/views/user_management/reset_password.py:90
+#: ./novaideo/views/user_management/reset_password.py:29
+#: ./novaideo/views/user_management/reset_password.py:115
 #: ./novaideo/content/processes/idea_management/behaviors.py:383
 msgid "Send"
 msgstr ""
 
-#: ./novaideo/views/user_management/reset_password.py:82
+#: ./novaideo/views/user_management/reset_password.py:80
+msgid "Alert for reset"
+msgstr ""
+
+#: ./novaideo/views/user_management/reset_password.py:94
 msgid "Request Password Reset"
 msgstr ""
 
-#: ./novaideo/views/user_management/reset_password.py:116
+#: ./novaideo/views/user_management/reset_password.py:105
+#: ./novaideo/views/proposal_management/submit_proposal.py:38
+#: ./novaideo/views/amendment_management/submit.py:136
+#: ./novaideo/content/processes/proposal_management/definition.py:346
+#: ./novaideo/content/processes/amendment_management/definition.py:73
+msgid "Submit"
+msgstr ""
+
+#: ./novaideo/views/user_management/reset_password.py:142
 msgid "Reset Password"
 msgstr ""
 
-#: ./novaideo/views/user_management/reset_password.py:72
+#: ./novaideo/views/user_management/reset_password.py:75
 #: ./novaideo/views/user_management/templates/login.pt:14
 #: ./novaideo/content/person.py:131
 msgid "Email"
+msgstr ""
+
+#: ./novaideo/views/user_management/reset_password.py:132
+#: ./novaideo/views/user_management/edit.py:48
+msgid "New Password"
 msgstr ""
 
 #: ./novaideo/views/user_management/edit.py:80
@@ -486,10 +503,6 @@ msgstr ""
 
 #: ./novaideo/views/user_management/edit.py:42
 msgid "Your Current Password"
-msgstr ""
-
-#: ./novaideo/views/user_management/edit.py:48
-msgid "New Password"
 msgstr ""
 
 #: ./novaideo/views/user_management/edit.py:31
@@ -553,6 +566,13 @@ msgstr ""
 
 #: ./novaideo/views/user_management/templates/see_person.pt:72
 msgid "Contents"
+msgstr ""
+
+#: ./novaideo/views/user_management/templates/alert_reset.pt:1
+msgid ""
+"Dès que vous aurez indiqué et envoyé votre courriel servant d'identifiant, "
+"vous recevrez par courriel un lien pour accéder à la page vous permettant de "
+"saisir votre nouveau mot de passe."
 msgstr ""
 
 #: ./novaideo/views/ballot_processes/rangevoting/vote.py:38
@@ -865,13 +885,6 @@ msgstr ""
 
 #: ./novaideo/views/proposal_management/submit_proposal.py:22
 msgid "Alert for submission"
-msgstr ""
-
-#: ./novaideo/views/proposal_management/submit_proposal.py:38
-#: ./novaideo/views/amendment_management/submit.py:136
-#: ./novaideo/content/processes/proposal_management/definition.py:346
-#: ./novaideo/content/processes/amendment_management/definition.py:73
-msgid "Submit"
 msgstr ""
 
 #: ./novaideo/views/proposal_management/submit_proposal.py:51
