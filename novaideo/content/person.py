@@ -128,6 +128,7 @@ class PersonSchema(VisualisableElementSchema, UserSchema, SearchableEntitySchema
             email_validator,
             colander.Length(max=100)
             ),
+        title=_('Email')
         )
 
     picture = colander.SchemaNode(
