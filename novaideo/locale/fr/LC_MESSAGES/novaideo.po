@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-02-13 17:46+0100\n"
+"POT-Creation-Date: 2015-02-13 18:10+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: SOUISSI <amensouissi@ecreall.com>\n"
 "Language-Team: \n"
@@ -15,7 +15,7 @@ msgstr ""
 #: novaideo/views/idea_management/templates/see_idea.pt:79
 #: novaideo/views/proposal_management/templates/diff_result.pt:15
 #: novaideo/views/templates/idea_result.pt:21
-#: novaideo/views/templates/proposal_result.pt:21
+#: novaideo/views/templates/proposal_result.pt:22
 #: novaideo/views/amendment_management/templates/see_amendment.pt:80
 #: novaideo/views/novaideo_view_manager/templates/see_proposal.pt:99
 msgid "Keywords"
@@ -290,7 +290,7 @@ msgstr ""
 #: novaideo/views/amendment_management/duplicate_amendment.py:27
 #: novaideo/content/processes/idea_management/definition.py:59
 #: novaideo/content/processes/proposal_management/definition.py:304
-#: novaideo/content/processes/proposal_management/behaviors.py:408
+#: novaideo/content/processes/proposal_management/behaviors.py:402
 #: novaideo/content/processes/amendment_management/definition.py:57
 msgid "Duplicate"
 msgstr "Dupliquer"
@@ -400,8 +400,8 @@ msgstr "(Proposée par"
 #: novaideo/views/templates/idea_list_element.pt:8
 #: novaideo/views/templates/proposal_list_element.pt:8
 #: novaideo/views/templates/idea_result.pt:43
-#: novaideo/views/templates/proposal_result.pt:63
-#: novaideo/views/templates/proposal_result.pt:78
+#: novaideo/views/templates/proposal_result.pt:64
+#: novaideo/views/templates/proposal_result.pt:79
 #: novaideo/views/templates/amendment_result.pt:56
 #: novaideo/views/amendment_management/templates/see_amendment.pt:52
 #: novaideo/views/amendment_management/templates/description_amendments.pt:20
@@ -932,7 +932,7 @@ msgid "Correct"
 msgstr "Relire"
 
 #: novaideo/views/proposal_management/templates/diff_result.pt:9
-#: novaideo/views/templates/proposal_result.pt:17
+#: novaideo/views/templates/proposal_result.pt:18
 #: novaideo/views/amendment_management/templates/see_amendment.pt:74
 #: novaideo/views/novaideo_view_manager/templates/see_proposal.pt:93
 #: novaideo/content/correction.py:46
@@ -998,13 +998,13 @@ msgid "Attention les ${limit} caractères maximum sont atteints. Pour continuer 
 msgstr ""
 
 #: novaideo/views/templates/idea_result.pt:40
-#: novaideo/views/templates/proposal_result.pt:60
-#: novaideo/views/templates/proposal_result.pt:75
+#: novaideo/views/templates/proposal_result.pt:61
+#: novaideo/views/templates/proposal_result.pt:76
 msgid "Modify the"
 msgstr "Modifiée le"
 
 #: novaideo/views/templates/idea_result.pt:45
-#: novaideo/views/templates/proposal_result.pt:65
+#: novaideo/views/templates/proposal_result.pt:66
 #: novaideo/views/templates/amendment_result.pt:58
 msgid "by"
 msgstr "par"
@@ -1014,13 +1014,13 @@ msgstr "par"
 msgid "There was a problem with your submission"
 msgstr "Un problème a été rencontré lors de votre soumission. Merci de vérifier les informations saisies."
 
-#: novaideo/views/templates/proposal_result.pt:38
+#: novaideo/views/templates/proposal_result.pt:39
 #: novaideo/views/novaideo_view_manager/templates/see_proposal.pt:118
 #: novaideo/content/novaideo_application.py:98
 msgid "Working group"
 msgstr "Groupe de travail"
 
-#: novaideo/views/templates/proposal_result.pt:80
+#: novaideo/views/templates/proposal_result.pt:81
 msgid "by its working group"
 msgstr "par son groupe de travail"
 
@@ -1766,11 +1766,11 @@ msgstr ""
 #: novaideo/content/processes/user_management/behaviors.py:139
 #: novaideo/content/processes/ballot_processes/__init__.py:32
 #: novaideo/content/processes/proposal_management/behaviors.py:142
-#: novaideo/content/processes/proposal_management/behaviors.py:202
-#: novaideo/content/processes/proposal_management/behaviors.py:373
-#: novaideo/content/processes/proposal_management/behaviors.py:443
-#: novaideo/content/processes/proposal_management/behaviors.py:906
-#: novaideo/content/processes/proposal_management/behaviors.py:1077
+#: novaideo/content/processes/proposal_management/behaviors.py:196
+#: novaideo/content/processes/proposal_management/behaviors.py:367
+#: novaideo/content/processes/proposal_management/behaviors.py:437
+#: novaideo/content/processes/proposal_management/behaviors.py:900
+#: novaideo/content/processes/proposal_management/behaviors.py:1071
 #: novaideo/content/processes/amendment_management/behaviors.py:100
 #: novaideo/content/processes/amendment_management/behaviors.py:195
 #: novaideo/content/processes/amendment_management/behaviors.py:336
@@ -1821,14 +1821,14 @@ msgstr "Discuter"
 #: novaideo/content/processes/idea_management/definition.py:99
 #: novaideo/content/processes/idea_management/behaviors.py:491
 #: novaideo/content/processes/proposal_management/definition.py:406
-#: novaideo/content/processes/proposal_management/behaviors.py:1778
+#: novaideo/content/processes/proposal_management/behaviors.py:1772
 msgid "Compare"
 msgstr "Comparer"
 
 #: novaideo/content/processes/idea_management/behaviors.py:138
 #: novaideo/content/processes/idea_management/behaviors.py:246
-#: novaideo/content/processes/proposal_management/behaviors.py:262
-#: novaideo/content/processes/proposal_management/behaviors.py:333
+#: novaideo/content/processes/proposal_management/behaviors.py:256
+#: novaideo/content/processes/proposal_management/behaviors.py:327
 #: novaideo/content/processes/amendment_management/behaviors.py:240
 msgid "Continue"
 msgstr "Continuer"
@@ -1964,7 +1964,7 @@ msgid "Delete the proposal"
 msgstr "Supprimer la proposition"
 
 #: novaideo/content/processes/proposal_management/definition.py:299
-#: novaideo/content/processes/proposal_management/behaviors.py:232
+#: novaideo/content/processes/proposal_management/behaviors.py:226
 msgid "Transform the idea as a proposal"
 msgstr "Transformer l'idée en proposition"
 
@@ -1977,7 +1977,7 @@ msgid "Duplicate this proposal"
 msgstr "Dupliquer la proposition"
 
 #: novaideo/content/processes/proposal_management/definition.py:311
-#: novaideo/content/processes/proposal_management/behaviors.py:466
+#: novaideo/content/processes/proposal_management/behaviors.py:460
 msgid "Edit the proposal"
 msgstr "Modifier la proposition"
 
@@ -2024,32 +2024,32 @@ msgstr "Corriger un item"
 msgid "Improve the proposal"
 msgstr "Améliorer la proposition"
 
-#: novaideo/content/processes/proposal_management/behaviors.py:233
+#: novaideo/content/processes/proposal_management/behaviors.py:227
 #: novaideo/content/processes/proposal_management/behaviors.py:176
 msgid "Creation"
 msgstr ""
 
 #: novaideo/content/processes/proposal_management/behaviors.py:175
-#: novaideo/content/processes/proposal_management/behaviors.py:407
-#: novaideo/content/processes/proposal_management/behaviors.py:465
-#: novaideo/content/processes/proposal_management/behaviors.py:1666
+#: novaideo/content/processes/proposal_management/behaviors.py:401
+#: novaideo/content/processes/proposal_management/behaviors.py:459
+#: novaideo/content/processes/proposal_management/behaviors.py:1660
 msgid "Add related ideas"
 msgstr "Ajouter les idées liées"
 
-#: novaideo/content/processes/proposal_management/behaviors.py:921
+#: novaideo/content/processes/proposal_management/behaviors.py:915
 #: novaideo/content/processes/amendment_management/behaviors.py:127
 msgid "_Amended version "
 msgstr "_Version amendée "
 
-#: novaideo/content/processes/proposal_management/behaviors.py:1667
+#: novaideo/content/processes/proposal_management/behaviors.py:1661
 msgid "New version"
 msgstr "Nouvelle version"
 
-#: novaideo/content/processes/proposal_management/behaviors.py:1725
+#: novaideo/content/processes/proposal_management/behaviors.py:1719
 msgid "open"
 msgstr "ouvert"
 
-#: novaideo/content/processes/proposal_management/behaviors.py:1724
+#: novaideo/content/processes/proposal_management/behaviors.py:1718
 msgid "closed"
 msgstr "fermé"
 
