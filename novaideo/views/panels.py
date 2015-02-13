@@ -36,7 +36,7 @@ from novaideo.contextual_help_messages import CONTEXTUAL_HELP_MESSAGES
 
 USER_MENU_ACTIONS = {'menu1': [SeeMyContents, SeeMyParticipations],
                      'menu2': [SeeMySelections, SeeMySupports],
-                     'menu3': [CreateIdea, CreateProposal]}
+                     'menu3': [CreateIdea]}#, CreateProposal]}
 
 
 def _getaction(view, process_id, action_id):

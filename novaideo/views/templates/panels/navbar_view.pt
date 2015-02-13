@@ -8,11 +8,6 @@
                    ${k}
                 </a>
             </div>
-            <div class="col-md-3 action-2"  tal:condition="actions['menu3']" tal:define="k keys[1]; a actions['menu3'][k]['url'] ">
-                <a class="btn btn-default ${((a is None) and 'disabled') or ''} btn-sm"  href="${a}" >
-                   ${k}
-                </a>
-            </div>
        </div>
       <!--a class="btn btn-navbar btn-primary nav-control" data-toggle="collapse" data-target=".nav-collapse"-->
           <!--span class="glyphicon glyphicon-chevron-up"></span-->

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-01-12 10:00+0100\n"
+"POT-Creation-Date: 2015-02-13 10:16+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: \n"
 
-#: ./novaideo/core.py:149
+#: ./novaideo/core.py:150
 #: ./novaideo/views/idea_management/templates/diff_result.pt:8
 #: ./novaideo/views/idea_management/templates/see_idea.pt:79
 #: ./novaideo/views/proposal_management/templates/diff_result.pt:15
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Keywords"
 msgstr ""
 
-#: ./novaideo/core.py:222
+#: ./novaideo/core.py:223
 #: ./novaideo/views/proposal_management/templates/idea_data.pt:5
 #: ./novaideo/views/correlation_management/templates/see_correlation.pt:10
 #: ./novaideo/content/idea.py:66 ./novaideo/content/correction.py:52
@@ -42,7 +42,7 @@ msgstr ""
 msgid "The idea"
 msgstr ""
 
-#: ./novaideo/views/panels.py:289
+#: ./novaideo/views/panels.py:290
 msgid "No more Information."
 msgstr ""
 
@@ -812,7 +812,7 @@ msgstr ""
 
 #: ./novaideo/views/proposal_management/edit_proposal.py:45
 #: ./novaideo/views/amendment_management/explanation_amendment.py:26
-#: ./novaideo/views/novaideo_view_manager/search.py:267
+#: ./novaideo/views/novaideo_view_manager/search.py:258
 #: ./novaideo/content/correlation.py:54 ./novaideo/content/idea.py:44
 #: ./novaideo/content/comment.py:33 ./novaideo/content/person.py:46
 msgid "- Select -"
@@ -1328,7 +1328,7 @@ msgstr ""
 
 #: ./novaideo/views/novaideo_view_manager/see_my_selections.py:30
 #: ./novaideo/content/processes/novaideo_view_manager/definition.py:53
-msgid "My selections"
+msgid "My favorites"
 msgstr ""
 
 #: ./novaideo/views/novaideo_view_manager/see_my_supports.py:30
@@ -1360,7 +1360,7 @@ msgstr ""
 msgid "Nova-Ideo contents"
 msgstr ""
 
-#: ./novaideo/views/novaideo_view_manager/search.py:249
+#: ./novaideo/views/novaideo_view_manager/search.py:240
 #, python-format
 msgid "${novaideo_title} contents"
 msgstr ""
@@ -1445,13 +1445,13 @@ msgstr ""
 #: ./novaideo/views/novaideo_abstract_process/select.py:24
 #: ./novaideo/content/processes/novaideo_abstract_process/definition.py:42
 #: ./novaideo/content/processes/novaideo_abstract_process/definition.py:43
-msgid "Add to my selections"
+msgid "Add to my favorites"
 msgstr ""
 
 #: ./novaideo/views/novaideo_abstract_process/deselect.py:24
 #: ./novaideo/content/processes/novaideo_abstract_process/definition.py:46
 #: ./novaideo/content/processes/novaideo_abstract_process/definition.py:47
-msgid "Remove from my selections"
+msgid "Remove from my favorites"
 msgstr ""
 
 #: ./novaideo/content/correlation.py:79 ./novaideo/content/comment.py:97
@@ -2055,7 +2055,7 @@ msgid "See my contents"
 msgstr ""
 
 #: ./novaideo/content/processes/novaideo_view_manager/definition.py:52
-msgid "See my selections"
+msgid "See my favorites"
 msgstr ""
 
 #: ./novaideo/content/processes/novaideo_view_manager/definition.py:56
