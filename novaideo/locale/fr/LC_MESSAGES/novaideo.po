@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-02-13 11:10+0100\n"
+"POT-Creation-Date: 2015-02-13 11:39+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: SOUISSI <amensouissi@ecreall.com>\n"
 "Language-Team: \n"
@@ -442,18 +442,24 @@ msgid "Activate the member"
 msgstr "Activer le membre"
 
 #: novaideo/views/user_management/reset_password.py:26
-#: novaideo/views/user_management/reset_password.py:89
+#: novaideo/views/user_management/reset_password.py:90
 #: novaideo/content/processes/idea_management/behaviors.py:383
 msgid "Send"
 msgstr "Envoyer"
 
-#: novaideo/views/user_management/reset_password.py:81
+#: novaideo/views/user_management/reset_password.py:82
 msgid "Request Password Reset"
 msgstr "Réinitialisation du mot de passe"
 
-#: novaideo/views/user_management/reset_password.py:115
+#: novaideo/views/user_management/reset_password.py:116
 msgid "Reset Password"
 msgstr "Réinitialiser le mot de passe"
+
+#: novaideo/views/user_management/reset_password.py:72
+#: novaideo/views/user_management/templates/login.pt:14
+#: novaideo/content/person.py:131
+msgid "Email"
+msgstr "Identifiant (courriel)"
 
 #: novaideo/views/user_management/edit.py:80
 #: novaideo/views/proposal_management/edit_proposal.py:170
@@ -501,12 +507,8 @@ msgstr "Se déconnecter"
 msgid "Log In"
 msgstr "Se connecter"
 
-#: novaideo/views/user_management/templates/login.pt:14
-msgid "Email"
-msgstr "Courriel"
-
 #: novaideo/views/user_management/templates/login.pt:17
-#: novaideo/content/person.py:169
+#: novaideo/content/person.py:170
 msgid "Password"
 msgstr "Mot de passe"
 
@@ -1508,7 +1510,7 @@ msgid "Minimum number of tokens by member"
 msgstr ""
 
 #: novaideo/content/novaideo_application.py:54
-#: novaideo/content/person.py:154
+#: novaideo/content/person.py:155
 msgid "Title"
 msgstr "Civilité"
 
@@ -1589,19 +1591,19 @@ msgstr ""
 msgid "${email} email address already in use"
 msgstr "Adresse courriel ${email} déjà utilisée"
 
-#: novaideo/content/person.py:136
+#: novaideo/content/person.py:137
 msgid "Picture"
 msgstr "Portrait"
 
-#: novaideo/content/person.py:143
+#: novaideo/content/person.py:144
 msgid "First name"
 msgstr "Prénom"
 
-#: novaideo/content/person.py:148
+#: novaideo/content/person.py:149
 msgid "Last name"
 msgstr "Nom"
 
-#: novaideo/content/person.py:159
+#: novaideo/content/person.py:160
 msgid "Locale"
 msgstr "Langue"
 
