@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-02-16 09:49+0100\n"
+"POT-Creation-Date: 2015-02-16 10:27+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: SOUISSI <amensouissi@ecreall.com>\n"
 "Language-Team: \n"
@@ -1020,7 +1020,7 @@ msgstr "Un problème a été rencontré lors de votre soumission. Merci de véri
 
 #: novaideo/views/templates/proposal_result.pt:39
 #: novaideo/views/novaideo_view_manager/templates/see_proposal.pt:118
-#: novaideo/content/novaideo_application.py:98
+#: novaideo/content/novaideo_application.py:108
 msgid "Working group"
 msgstr "Groupe de travail"
 
@@ -1358,7 +1358,7 @@ msgid "My supports"
 msgstr "Mes appréciations"
 
 #: novaideo/views/novaideo_view_manager/search.py:45
-#: novaideo/content/novaideo_application.py:116
+#: novaideo/content/novaideo_application.py:126
 msgid "Ideas"
 msgstr "Idées"
 
@@ -1520,14 +1520,13 @@ msgstr "Mademoiselle"
 #: novaideo/content/novaideo_application.py:30
 #: novaideo/content/novaideo_application.py:32
 #: novaideo/content/novaideo_application.py:34
-#: novaideo/content/novaideo_application.py:36
+#: novaideo/content/novaideo_application.py:44
 msgid "Irony"
 msgstr "Ironie"
 
 #: novaideo/content/novaideo_application.py:30
 #: novaideo/content/novaideo_application.py:32
 #: novaideo/content/novaideo_application.py:34
-#: novaideo/content/novaideo_application.py:36
 msgid "Humor"
 msgstr "Humour"
 
@@ -1538,65 +1537,96 @@ msgid "Remark"
 msgstr "Remarque"
 
 #: novaideo/content/novaideo_application.py:34
-#: novaideo/content/novaideo_application.py:36
 #: novaideo/content/idea.py:73
 msgid "Improvement"
 msgstr "Amélioration"
 
-#: novaideo/content/novaideo_application.py:58
+#: novaideo/content/novaideo_application.py:37
+msgid "Changing an idea"
+msgstr "Changer une idée"
+
+#: novaideo/content/novaideo_application.py:38
+msgid "Propose improvements"
+msgstr " Proposer des améliorations"
+
+#: novaideo/content/novaideo_application.py:39
+msgid "Reformulate"
+msgstr "Reformuler"
+
+#: novaideo/content/novaideo_application.py:40
+msgid "Generalize"
+msgstr "Généraliser"
+
+#: novaideo/content/novaideo_application.py:41
+msgid "Expand"
+msgstr "Détailler"
+
+#: novaideo/content/novaideo_application.py:42
+msgid "Ask a question"
+msgstr "Poser une question"
+
+#: novaideo/content/novaideo_application.py:43
+msgid "Review"
+msgstr "Donner un avis"
+
+#: novaideo/content/novaideo_application.py:45
+msgid "Use humor"
+msgstr "Faire de l'humour"
+
+#: novaideo/content/novaideo_application.py:68
 msgid "List of titles"
 msgstr ""
 
-#: novaideo/content/novaideo_application.py:69
+#: novaideo/content/novaideo_application.py:79
 msgid "Comment intentions"
 msgstr ""
 
-#: novaideo/content/novaideo_application.py:80
+#: novaideo/content/novaideo_application.py:90
 msgid "Idea intentions"
 msgstr ""
 
-#: novaideo/content/novaideo_application.py:91
+#: novaideo/content/novaideo_application.py:101
 msgid "Amendment intentions"
 msgstr ""
 
-#: novaideo/content/novaideo_application.py:99
+#: novaideo/content/novaideo_application.py:109
 msgid "Working groups"
 msgstr "Groupes de travail"
 
-#: novaideo/content/novaideo_application.py:121
+#: novaideo/content/novaideo_application.py:131
 msgid "Minimum number of participants for a working group"
 msgstr ""
 
-#: novaideo/content/novaideo_application.py:127
+#: novaideo/content/novaideo_application.py:137
 msgid "Maximum number of participants for a working group"
 msgstr ""
 
-#: novaideo/content/novaideo_application.py:133
+#: novaideo/content/novaideo_application.py:143
 msgid "Maximum number of working group by member"
 msgstr ""
 
-#: novaideo/content/novaideo_application.py:139
+#: novaideo/content/novaideo_application.py:149
 msgid "Minimum number of tokens by member"
 msgstr ""
 
-#: novaideo/content/novaideo_application.py:54
+#: novaideo/content/novaideo_application.py:64
 #: novaideo/content/person.py:155
 msgid "Title"
 msgstr "Civilité"
 
-#: novaideo/content/novaideo_application.py:65
+#: novaideo/content/novaideo_application.py:75
 msgid "Comment intention"
 msgstr ""
 
-#: novaideo/content/novaideo_application.py:76
+#: novaideo/content/novaideo_application.py:86
 msgid "Idea intention"
 msgstr ""
 
-#: novaideo/content/novaideo_application.py:87
+#: novaideo/content/novaideo_application.py:97
 msgid "Amendment intention"
 msgstr ""
 
-#: novaideo/content/novaideo_application.py:115
+#: novaideo/content/novaideo_application.py:125
 msgid "Idea"
 msgstr "Idée"
 
