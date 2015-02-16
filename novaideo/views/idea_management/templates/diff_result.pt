@@ -12,9 +12,6 @@
       </dd>
     </dl>
 </div>
-
-
-
   <div id="legend">
     <div><div class="legend-carre-ins"></div> : <span i18n:translate="">Text added to the current version</span></div>
     <div><div class="legend-carre-del"></div> : <span i18n:translate="">Text removed from the current version</span></div>

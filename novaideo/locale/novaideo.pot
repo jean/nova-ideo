@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-02-16 10:27+0100\n"
+"POT-Creation-Date: 2015-02-16 10:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,7 +108,7 @@ msgstr ""
 #: ./novaideo/content/processes/novaideo_file_management/behaviors.py:33
 #: ./novaideo/content/processes/idea_management/definition.py:94
 #: ./novaideo/content/processes/idea_management/definition.py:95
-#: ./novaideo/content/processes/idea_management/behaviors.py:470
+#: ./novaideo/content/processes/idea_management/behaviors.py:472
 #: ./novaideo/content/processes/user_management/definition.py:69
 #: ./novaideo/content/processes/user_management/definition.py:70
 #: ./novaideo/content/processes/user_management/behaviors.py:237
@@ -367,12 +367,12 @@ msgstr ""
 msgid ", the"
 msgstr ""
 
-#: ./novaideo/views/idea_management/templates/diff_result.pt:36
+#: ./novaideo/views/idea_management/templates/diff_result.pt:33
 #: ./novaideo/views/proposal_management/templates/diff_result.pt:51
 msgid "Text added to the current version"
 msgstr ""
 
-#: ./novaideo/views/idea_management/templates/diff_result.pt:40
+#: ./novaideo/views/idea_management/templates/diff_result.pt:37
 #: ./novaideo/views/proposal_management/templates/diff_result.pt:55
 msgid "Text removed from the current version"
 msgstr ""
@@ -457,7 +457,7 @@ msgstr ""
 
 #: ./novaideo/views/user_management/reset_password.py:29
 #: ./novaideo/views/user_management/reset_password.py:115
-#: ./novaideo/content/processes/idea_management/behaviors.py:383
+#: ./novaideo/content/processes/idea_management/behaviors.py:385
 msgid "Send"
 msgstr ""
 
@@ -1232,8 +1232,7 @@ msgid "Edit the amendment"
 msgstr ""
 
 #: ./novaideo/views/amendment_management/explanation_amendment.py:31
-#: ./novaideo/content/correlation.py:72 ./novaideo/content/idea.py:72
-#: ./novaideo/content/comment.py:89
+#: ./novaideo/content/correlation.py:72 ./novaideo/content/comment.py:89
 msgid "Intention"
 msgstr ""
 
@@ -1587,7 +1586,7 @@ msgstr ""
 msgid "Remark"
 msgstr ""
 
-#: ./novaideo/content/novaideo_application.py:34 ./novaideo/content/idea.py:73
+#: ./novaideo/content/novaideo_application.py:34
 msgid "Improvement"
 msgstr ""
 
@@ -1680,15 +1679,19 @@ msgstr ""
 msgid "Idea"
 msgstr ""
 
-#: ./novaideo/content/idea.py:86
+#: ./novaideo/content/idea.py:75
+msgid "Note"
+msgstr ""
+
+#: ./novaideo/content/idea.py:87
 msgid "Attached files"
 msgstr ""
 
-#: ./novaideo/content/idea.py:81
+#: ./novaideo/content/idea.py:82
 msgid "File"
 msgstr ""
 
-#: ./novaideo/content/idea.py:84
+#: ./novaideo/content/idea.py:85
 msgid "Add file"
 msgstr ""
 
@@ -1903,14 +1906,14 @@ msgid "Discuss"
 msgstr ""
 
 #: ./novaideo/content/processes/idea_management/definition.py:99
-#: ./novaideo/content/processes/idea_management/behaviors.py:491
+#: ./novaideo/content/processes/idea_management/behaviors.py:493
 #: ./novaideo/content/processes/proposal_management/definition.py:406
 #: ./novaideo/content/processes/proposal_management/behaviors.py:1772
 msgid "Compare"
 msgstr ""
 
 #: ./novaideo/content/processes/idea_management/behaviors.py:138
-#: ./novaideo/content/processes/idea_management/behaviors.py:246
+#: ./novaideo/content/processes/idea_management/behaviors.py:248
 #: ./novaideo/content/processes/proposal_management/behaviors.py:256
 #: ./novaideo/content/processes/proposal_management/behaviors.py:327
 #: ./novaideo/content/processes/amendment_management/behaviors.py:240
