@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-02-16 11:59+0100\n"
+"POT-Creation-Date: 2015-02-16 12:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,7 +145,7 @@ msgid "Pas de versions"
 msgstr ""
 
 #: ./novaideo/views/idea_management/compare_idea.py:29
-msgid "Une version disponible"
+msgid "Version disponible"
 msgstr ""
 
 #: ./novaideo/views/idea_management/compare_idea.py:30
@@ -189,7 +189,7 @@ msgid "Pas de contenus asociés"
 msgstr ""
 
 #: ./novaideo/views/idea_management/associate.py:29
-msgid "Un contenu asocié"
+msgid "Contenu asocié"
 msgstr ""
 
 #: ./novaideo/views/idea_management/associate.py:30
@@ -230,7 +230,7 @@ msgid "Aucune personne contactée"
 msgstr ""
 
 #: ./novaideo/views/idea_management/present_idea.py:36
-msgid "Une personne contactée"
+msgid "Personne contactée"
 msgstr ""
 
 #: ./novaideo/views/idea_management/present_idea.py:37
@@ -284,7 +284,7 @@ msgid "Pas de fils de discussion"
 msgstr ""
 
 #: ./novaideo/views/idea_management/comment_idea.py:112
-msgid "Un fil de discussion"
+msgid "Fil de discussion"
 msgstr ""
 
 #: ./novaideo/views/idea_management/comment_idea.py:113
@@ -379,10 +379,10 @@ msgstr ""
 
 #: ./novaideo/views/idea_management/templates/alert_idea_publish.pt:1
 msgid ""
-"En cliquant sur Continuer, votre idée sera soumise à l'ensemble des "
-"utilisateurs et ne pourra plus être modifiée. Elle pourra être reprise par "
-"n'importe qui dans une proposition et discutée. Pour la faire évoluer, il "
-"faudra préalablement la dupliquer."
+"En cliquant sur « Continuer », l'idée sera publiée et ne pourra plus être "
+"modifiée. Elle pourra être utilisée par n'importe quel membre de la "
+"plateforme pour une proposition. L'auteur de l'idée sera notifiée par "
+"courriel de votre décision."
 msgstr ""
 
 #: ./novaideo/views/idea_management/templates/sent_to.pt:15
@@ -944,7 +944,7 @@ msgid "Pas d'idées liées"
 msgstr ""
 
 #: ./novaideo/views/proposal_management/see_related_ideas.py:21
-msgid "Une idée liée"
+msgid "Idée liée"
 msgstr ""
 
 #: ./novaideo/views/proposal_management/see_related_ideas.py:22
