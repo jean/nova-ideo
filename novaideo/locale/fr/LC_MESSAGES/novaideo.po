@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-02-16 10:45+0100\n"
+"POT-Creation-Date: 2015-02-16 11:59+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: SOUISSI <amensouissi@ecreall.com>\n"
 "Language-Team: \n"
@@ -105,7 +105,7 @@ msgstr "Supprimer"
 #: novaideo/content/processes/novaideo_file_management/behaviors.py:33
 #: novaideo/content/processes/idea_management/definition.py:94
 #: novaideo/content/processes/idea_management/definition.py:95
-#: novaideo/content/processes/idea_management/behaviors.py:472
+#: novaideo/content/processes/idea_management/behaviors.py:471
 #: novaideo/content/processes/user_management/definition.py:69
 #: novaideo/content/processes/user_management/definition.py:70
 #: novaideo/content/processes/user_management/behaviors.py:237
@@ -223,7 +223,7 @@ msgid "Associate the idea to an other content"
 msgstr "Associer l'idée à un autre contenu"
 
 #: novaideo/views/idea_management/present_idea.py:35
-msgid "Pas de personnes contactées"
+msgid "Aucune personne contactée"
 msgstr ""
 
 #: novaideo/views/idea_management/present_idea.py:36
@@ -378,9 +378,29 @@ msgstr "Texte supprimé de la version en cours"
 msgid "En cliquant sur Continuer, votre idée sera soumise à l'ensemble des utilisateurs et ne pourra plus être modifiée. Elle pourra être reprise par n'importe qui dans une proposition et discutée. Pour la faire évoluer, il faudra préalablement la dupliquer."
 msgstr ""
 
-#: novaideo/views/idea_management/templates/sent_to.pt:13
+#: novaideo/views/idea_management/templates/sent_to.pt:15
 msgid "The idea has been sent:"
 msgstr "L'idée a été envoyée à :"
+
+#: novaideo/views/idea_management/templates/sent_to.pt:31
+#: novaideo/views/proposal_management/templates/sent_to.pt:31
+#: novaideo/views/amendment_management/templates/sent_to.pt:31
+msgid "And ${external_len} external person contacted."
+msgstr "Ainsi que ${external_len} personne externe contactée"
+
+#: novaideo/views/idea_management/templates/sent_to.pt:36
+#: novaideo/views/proposal_management/templates/sent_to.pt:36
+#: novaideo/views/amendment_management/templates/sent_to.pt:36
+msgid "And ${external_len} external persons contacted."
+msgstr "Ainsi que ${external_len} personnes externes contactées"
+
+#: novaideo/views/idea_management/templates/sent_to.pt:45
+msgid "The idea has been sent to ${external_len} external person."
+msgstr "L'idée a été envoyée à ${external_len} personne externe."
+
+#: novaideo/views/idea_management/templates/sent_to.pt:50
+msgid "The idea has been sent to ${external_len} external persons."
+msgstr "L'idée a été envoyée à ${external_len} personnes externes."
 
 #: novaideo/views/idea_management/templates/see_idea.pt:44
 msgid "Pour que votre idée dupliquée puisse être publiée ou transformée en proposition, vous devez préalablement la modifier, elle ne doit pas être identique à l'idée d'origine."
@@ -447,7 +467,7 @@ msgstr "Activer le membre"
 
 #: novaideo/views/user_management/reset_password.py:29
 #: novaideo/views/user_management/reset_password.py:115
-#: novaideo/content/processes/idea_management/behaviors.py:385
+#: novaideo/content/processes/idea_management/behaviors.py:384
 msgid "Send"
 msgstr "Envoyer"
 
@@ -971,9 +991,17 @@ msgstr "(Version amendée par"
 msgid "duplicated from the amended version"
 msgstr "dupliquée à partir de la version amendée"
 
-#: novaideo/views/proposal_management/templates/sent_to.pt:13
-msgid "The proposal has been sent"
-msgstr "La proposition a été envoyée à"
+#: novaideo/views/proposal_management/templates/sent_to.pt:15
+msgid "The proposal has been sent:"
+msgstr "La proposition a été envoyée à:"
+
+#: novaideo/views/proposal_management/templates/sent_to.pt:45
+msgid "The proposal has been sent to ${external_len} external person."
+msgstr "La proposition a été envoyée à ${external_len} personne externe."
+
+#: novaideo/views/proposal_management/templates/sent_to.pt:50
+msgid "The proposal has been sent to ${external_len} external persons."
+msgstr "La proposition a été envoyée à ${external_len} personnes externes."
 
 #: novaideo/views/proposal_management/templates/alert_submit_proposal.pt:4
 #: novaideo/views/amendment_management/templates/alert_amendment_submit.pt:2
@@ -1277,9 +1305,17 @@ msgstr ", dupliquée à partir de la version amendée"
 msgid "Pas d'amendements accessibles. Des amendements sont en cours de rédaction."
 msgstr ""
 
-#: novaideo/views/amendment_management/templates/sent_to.pt:13
-msgid "L'amendement a été envoyé à:"
-msgstr ""
+#: novaideo/views/amendment_management/templates/sent_to.pt:15
+msgid "The amendement has been sent:"
+msgstr "L'amendement a été envoyée à:"
+
+#: novaideo/views/amendment_management/templates/sent_to.pt:45
+msgid "The amendement has been sent to ${external_len} external person."
+msgstr "L'amendement a été envoyée à ${external_len} personne externe."
+
+#: novaideo/views/amendment_management/templates/sent_to.pt:50
+msgid "The amendement has been sent to ${external_len} external persons."
+msgstr "L'amendement a été envoyée à ${external_len} personnes externes."
 
 #: novaideo/views/amendment_management/templates/explanation_modal_item.pt:11
 msgid "Explain the intention of your changes"
@@ -1855,14 +1891,14 @@ msgid "Discuss"
 msgstr "Discuter"
 
 #: novaideo/content/processes/idea_management/definition.py:99
-#: novaideo/content/processes/idea_management/behaviors.py:493
+#: novaideo/content/processes/idea_management/behaviors.py:492
 #: novaideo/content/processes/proposal_management/definition.py:406
 #: novaideo/content/processes/proposal_management/behaviors.py:1772
 msgid "Compare"
 msgstr "Comparer"
 
 #: novaideo/content/processes/idea_management/behaviors.py:138
-#: novaideo/content/processes/idea_management/behaviors.py:248
+#: novaideo/content/processes/idea_management/behaviors.py:247
 #: novaideo/content/processes/proposal_management/behaviors.py:256
 #: novaideo/content/processes/proposal_management/behaviors.py:327
 #: novaideo/content/processes/amendment_management/behaviors.py:240

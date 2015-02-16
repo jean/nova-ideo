@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-02-16 10:45+0100\n"
+"POT-Creation-Date: 2015-02-16 11:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,7 +108,7 @@ msgstr ""
 #: ./novaideo/content/processes/novaideo_file_management/behaviors.py:33
 #: ./novaideo/content/processes/idea_management/definition.py:94
 #: ./novaideo/content/processes/idea_management/definition.py:95
-#: ./novaideo/content/processes/idea_management/behaviors.py:472
+#: ./novaideo/content/processes/idea_management/behaviors.py:471
 #: ./novaideo/content/processes/user_management/definition.py:69
 #: ./novaideo/content/processes/user_management/definition.py:70
 #: ./novaideo/content/processes/user_management/behaviors.py:237
@@ -226,7 +226,7 @@ msgid "Associate the idea to an other content"
 msgstr ""
 
 #: ./novaideo/views/idea_management/present_idea.py:35
-msgid "Pas de personnes contactées"
+msgid "Aucune personne contactée"
 msgstr ""
 
 #: ./novaideo/views/idea_management/present_idea.py:36
@@ -385,8 +385,28 @@ msgid ""
 "faudra préalablement la dupliquer."
 msgstr ""
 
-#: ./novaideo/views/idea_management/templates/sent_to.pt:13
+#: ./novaideo/views/idea_management/templates/sent_to.pt:15
 msgid "The idea has been sent:"
+msgstr ""
+
+#: ./novaideo/views/idea_management/templates/sent_to.pt:31
+#: ./novaideo/views/proposal_management/templates/sent_to.pt:31
+#: ./novaideo/views/amendment_management/templates/sent_to.pt:31
+msgid "And ${external_len} external person contacted."
+msgstr ""
+
+#: ./novaideo/views/idea_management/templates/sent_to.pt:36
+#: ./novaideo/views/proposal_management/templates/sent_to.pt:36
+#: ./novaideo/views/amendment_management/templates/sent_to.pt:36
+msgid "And ${external_len} external persons contacted."
+msgstr ""
+
+#: ./novaideo/views/idea_management/templates/sent_to.pt:45
+msgid "The idea has been sent to ${external_len} external person."
+msgstr ""
+
+#: ./novaideo/views/idea_management/templates/sent_to.pt:50
+msgid "The idea has been sent to ${external_len} external persons."
 msgstr ""
 
 #: ./novaideo/views/idea_management/templates/see_idea.pt:44
@@ -457,7 +477,7 @@ msgstr ""
 
 #: ./novaideo/views/user_management/reset_password.py:29
 #: ./novaideo/views/user_management/reset_password.py:115
-#: ./novaideo/content/processes/idea_management/behaviors.py:385
+#: ./novaideo/content/processes/idea_management/behaviors.py:384
 msgid "Send"
 msgstr ""
 
@@ -992,8 +1012,16 @@ msgstr ""
 msgid "duplicated from the amended version"
 msgstr ""
 
-#: ./novaideo/views/proposal_management/templates/sent_to.pt:13
-msgid "The proposal has been sent"
+#: ./novaideo/views/proposal_management/templates/sent_to.pt:15
+msgid "The proposal has been sent:"
+msgstr ""
+
+#: ./novaideo/views/proposal_management/templates/sent_to.pt:45
+msgid "The proposal has been sent to ${external_len} external person."
+msgstr ""
+
+#: ./novaideo/views/proposal_management/templates/sent_to.pt:50
+msgid "The proposal has been sent to ${external_len} external persons."
 msgstr ""
 
 #: ./novaideo/views/proposal_management/templates/alert_submit_proposal.pt:4
@@ -1314,8 +1342,16 @@ msgid ""
 "Pas d'amendements accessibles. Des amendements sont en cours de rédaction."
 msgstr ""
 
-#: ./novaideo/views/amendment_management/templates/sent_to.pt:13
-msgid "L'amendement a été envoyé à:"
+#: ./novaideo/views/amendment_management/templates/sent_to.pt:15
+msgid "The amendement has been sent:"
+msgstr ""
+
+#: ./novaideo/views/amendment_management/templates/sent_to.pt:45
+msgid "The amendement has been sent to ${external_len} external person."
+msgstr ""
+
+#: ./novaideo/views/amendment_management/templates/sent_to.pt:50
+msgid "The amendement has been sent to ${external_len} external persons."
 msgstr ""
 
 #: ./novaideo/views/amendment_management/templates/explanation_modal_item.pt:11
@@ -1906,14 +1942,14 @@ msgid "Discuss"
 msgstr ""
 
 #: ./novaideo/content/processes/idea_management/definition.py:99
-#: ./novaideo/content/processes/idea_management/behaviors.py:493
+#: ./novaideo/content/processes/idea_management/behaviors.py:492
 #: ./novaideo/content/processes/proposal_management/definition.py:406
 #: ./novaideo/content/processes/proposal_management/behaviors.py:1772
 msgid "Compare"
 msgstr ""
 
 #: ./novaideo/content/processes/idea_management/behaviors.py:138
-#: ./novaideo/content/processes/idea_management/behaviors.py:248
+#: ./novaideo/content/processes/idea_management/behaviors.py:247
 #: ./novaideo/content/processes/proposal_management/behaviors.py:256
 #: ./novaideo/content/processes/proposal_management/behaviors.py:327
 #: ./novaideo/content/processes/amendment_management/behaviors.py:240
