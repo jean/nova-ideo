@@ -1,3 +1,4 @@
+# -*- coding: utf8 -*-
 # Copyright (c) 2014 by Ecreall under licence AGPL terms 
 # avalaible on http://www.gnu.org/licenses/agpl.html 
 
@@ -6,7 +7,6 @@
 
 import colander
 from zope.interface import implementer
-
 from substanced.content import content
 from substanced.schema import NameSchemaNode
 from substanced.util import renamer
@@ -33,7 +33,17 @@ DEFAULT_CORRELATION_INTENTIONS = [_('Irony'), _('Humor'), _('Remark')]
 
 DEFAULT_IDEA_INTENTIONS = [_('Improvement'), _('Humor'), _('Irony')]
 
-DEFAULT_AMENDMENT_INTENTIONS = [_('Improvement'), _('Humor'), _('Irony')]
+DEFAULT_AMENDMENT_INTENTIONS = [
+            _('Changing an idea'),
+            _('Propose improvements'),
+            _('Reformulate'),
+            _('Generalize'),
+            _('Expand'),
+            _('Ask a question'),
+            _('Review'),
+            _('Irony'),
+            _('Use humor')
+        ]
 
 
 def context_is_a_root(context, request):
