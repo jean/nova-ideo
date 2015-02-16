@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-02-13 18:10+0100\n"
+"POT-Creation-Date: 2015-02-16 09:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -156,11 +156,11 @@ msgstr ""
 msgid "Diff result"
 msgstr ""
 
-#: ./novaideo/views/idea_management/compare_idea.py:130
+#: ./novaideo/views/idea_management/compare_idea.py:131
 msgid "Compare idea form"
 msgstr ""
 
-#: ./novaideo/views/idea_management/compare_idea.py:151
+#: ./novaideo/views/idea_management/compare_idea.py:152
 #: ./novaideo/views/proposal_management/compare_proposal.py:49
 #: ./novaideo/content/processes/idea_management/definition.py:98
 #: ./novaideo/content/processes/proposal_management/definition.py:405
@@ -173,6 +173,10 @@ msgstr ""
 
 #: ./novaideo/views/idea_management/compare_idea.py:124
 msgid "Last versions"
+msgstr ""
+
+#: ./novaideo/views/idea_management/compare_idea.py:125
+msgid "Select the previous version to compare"
 msgstr ""
 
 #: ./novaideo/views/idea_management/recuperate_idea.py:23
@@ -365,12 +369,12 @@ msgstr ""
 
 #: ./novaideo/views/idea_management/templates/diff_result.pt:36
 #: ./novaideo/views/proposal_management/templates/diff_result.pt:51
-msgid "Text added in"
+msgid "Text added to the current version"
 msgstr ""
 
-#: ./novaideo/views/idea_management/templates/diff_result.pt:41
-#: ./novaideo/views/proposal_management/templates/diff_result.pt:56
-msgid "Text removed in"
+#: ./novaideo/views/idea_management/templates/diff_result.pt:40
+#: ./novaideo/views/proposal_management/templates/diff_result.pt:55
+msgid "Text removed from the current version"
 msgstr ""
 
 #: ./novaideo/views/idea_management/templates/alert_idea_publish.pt:1

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-02-13 18:10+0100\n"
+"POT-Creation-Date: 2015-02-16 09:49+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: SOUISSI <amensouissi@ecreall.com>\n"
 "Language-Team: \n"
@@ -153,11 +153,11 @@ msgstr ""
 msgid "Diff result"
 msgstr "Différences de version"
 
-#: novaideo/views/idea_management/compare_idea.py:130
+#: novaideo/views/idea_management/compare_idea.py:131
 msgid "Compare idea form"
 msgstr "Formulaire de comparaison de l'idée"
 
-#: novaideo/views/idea_management/compare_idea.py:151
+#: novaideo/views/idea_management/compare_idea.py:152
 #: novaideo/views/proposal_management/compare_proposal.py:49
 #: novaideo/content/processes/idea_management/definition.py:98
 #: novaideo/content/processes/proposal_management/definition.py:405
@@ -171,6 +171,10 @@ msgstr "Version en cours"
 #: novaideo/views/idea_management/compare_idea.py:124
 msgid "Last versions"
 msgstr "Versions précédentes"
+
+#: novaideo/views/idea_management/compare_idea.py:125
+msgid "Select the previous version to compare"
+msgstr "Sélectionner la version précédente à comparer"
 
 #: novaideo/views/idea_management/recuperate_idea.py:23
 #: novaideo/content/processes/idea_management/definition.py:75
@@ -362,13 +366,13 @@ msgstr ", le"
 
 #: novaideo/views/idea_management/templates/diff_result.pt:36
 #: novaideo/views/proposal_management/templates/diff_result.pt:51
-msgid "Text added in"
-msgstr "Texte ajouté dans"
+msgid "Text added to the current version"
+msgstr "Texte ajouté dans la version en cours"
 
-#: novaideo/views/idea_management/templates/diff_result.pt:41
-#: novaideo/views/proposal_management/templates/diff_result.pt:56
-msgid "Text removed in"
-msgstr "Texte supprimé dans"
+#: novaideo/views/idea_management/templates/diff_result.pt:40
+#: novaideo/views/proposal_management/templates/diff_result.pt:55
+msgid "Text removed from the current version"
+msgstr "Texte supprimé de la version en cours"
 
 #: novaideo/views/idea_management/templates/alert_idea_publish.pt:1
 msgid "En cliquant sur Continuer, votre idée sera soumise à l'ensemble des utilisateurs et ne pourra plus être modifiée. Elle pourra être reprise par n'importe qui dans une proposition et discutée. Pour la faire évoluer, il faudra préalablement la dupliquer."
@@ -2110,3 +2114,8 @@ msgstr ""
 msgid "Abstract process"
 msgstr ""
 
+#~ msgid "Text added in"
+#~ msgstr "Texte ajouté dans"
+
+#~ msgid "Text removed in"
+#~ msgstr "Texte supprimé dans"
