@@ -31,7 +31,7 @@ def select_processsecurity_validation(process, context):
 
 class SelectEntity(InfiniteCardinality):
     style = 'button' #TODO add style abstract class
-    style_descriminator = 'global-action'
+    style_descriminator = 'text-action'
     style_picto = 'glyphicon glyphicon-star-empty'
     style_order = 100
     isSequential = False
@@ -65,7 +65,7 @@ def deselect_state_validation(process, context):
 
 class DeselectEntity(InfiniteCardinality):
     style = 'button' #TODO add style abstract class
-    style_descriminator = 'global-action'
+    style_descriminator = 'text-action'
     style_picto = 'glyphicon glyphicon-star'
     style_order = 101
     isSequential = False

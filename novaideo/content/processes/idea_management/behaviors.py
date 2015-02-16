@@ -85,9 +85,9 @@ def duplicate_processsecurity_validation(process, context):
 
 class DuplicateIdea(InfiniteCardinality):
     style = 'button' #TODO add style abstract class
-    style_descriminator = 'global-action'
+    style_descriminator = 'text-action'
     style_picto = 'glyphicon glyphicon-resize-full'
-    style_order = 5
+    style_order = 2
     submission_title = _('Save')
     context = Iidea
     processsecurity_validation = duplicate_processsecurity_validation
@@ -134,7 +134,7 @@ class DelIdea(InfiniteCardinality):
     style = 'button' #TODO add style abstract class
     style_descriminator = 'global-action'
     style_picto = 'glyphicon glyphicon-trash'
-    style_order = 4
+    style_order = 6
     submission_title = _('Continue')
     context = Iidea
     roles_validation = del_roles_validation
@@ -243,7 +243,7 @@ class PublishIdea(InfiniteCardinality):
     style = 'button' #TODO add style abstract class
     style_descriminator = 'global-action'
     style_picto = 'glyphicon glyphicon-share'
-    style_order = 1
+    style_order = 5
     submission_title = _('Continue')
     context = Iidea
     roles_validation = pub_roles_validation
@@ -277,7 +277,7 @@ class AbandonIdea(InfiniteCardinality):
     style = 'button' #TODO add style abstract class
     style_descriminator = 'global-action'
     style_picto = 'glyphicon glyphicon-stop'
-    style_order = 2
+    style_order = 4
     context = Iidea
     roles_validation = ab_roles_validation
     processsecurity_validation = ab_processsecurity_validation
@@ -311,7 +311,7 @@ class RecuperateIdea(InfiniteCardinality):
     style = 'button' #TODO add style abstract class
     style_descriminator = 'global-action'
     style_picto = 'glyphicon glyphicon-play'
-    style_order = 3
+    style_order = 8
     context = Iidea
     roles_validation = re_roles_validation
     processsecurity_validation = re_processsecurity_validation
