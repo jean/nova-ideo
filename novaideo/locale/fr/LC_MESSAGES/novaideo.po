@@ -1115,7 +1115,7 @@ msgstr "Propositions utilisant cette idée:"
 
 #: novaideo/views/templates/panels/step1_0.pt:7
 msgid "Duplicated ideas from this idea:"
-msgstr "Idées dupliquées de cett idée:"
+msgstr "Idées dupliquées de cette idée:"
 
 #: novaideo/views/templates/panels/step3_1.pt:5
 #: novaideo/views/templates/panels/step3_3.pt:5
@@ -1434,7 +1434,7 @@ msgstr "Rechercher"
 
 #: novaideo/views/novaideo_view_manager/search.py:199
 msgid "No element found"
-msgstr "Pas d'élémments trouvés"
+msgstr "Pas d'éléments trouvés"
 
 #: novaideo/views/novaideo_view_manager/search.py:200
 msgid "One element found"
