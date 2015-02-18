@@ -349,6 +349,7 @@ class CommentIdea(InfiniteCardinality):
 
     def start(self, context, request, appstruct, **kw):
         comment = appstruct['_object_data']
+        import pdb; pdb.set_trace()
         context.addtoproperty('comments', comment)
         user = get_current()
         comment.setproperty('author', user)
