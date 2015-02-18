@@ -242,6 +242,7 @@ def pub_state_validation(process, context):
 class PublishIdea(InfiniteCardinality):
     style = 'button' #TODO add style abstract class
     style_descriminator = 'global-action'
+    style_interaction = 'modal-action'
     style_picto = 'glyphicon glyphicon-share'
     style_order = 5
     submission_title = _('Continue')

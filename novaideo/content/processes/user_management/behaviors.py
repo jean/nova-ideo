@@ -132,7 +132,7 @@ def edit_state_validation(process, context):
 
 class Edit(InfiniteCardinality):
     style = 'button' #TODO add style abstract class
-    style_descriminator = 'global-action'
+    style_descriminator = 'text-action'
     style_picto = 'glyphicon glyphicon-pencil'
     style_order = 1
     title = _('Edit')
@@ -182,7 +182,10 @@ def deactivate_state_validation(process, context):
 
 class Deactivate(InfiniteCardinality):
     style = 'button' #TODO add style abstract class
-    title = _('Deactivate')
+    style_descriminator = 'global-action'
+    style_picto = 'glyphicon glyphicon-ban-circle'
+    style_order = 0
+    title = _('Deactivate the profile')
     context = IPerson
     roles_validation = deactivate_roles_validation
     processsecurity_validation = deactivate_processsecurity_validation
@@ -212,7 +215,10 @@ def activate_state_validation(process, context):
 
 class Activate(InfiniteCardinality):
     style = 'button' #TODO add style abstract class
-    title = _('Activate')
+    style_descriminator = 'global-action'
+    style_picto = 'glyphicon glyphicon-ok-circle'
+    style_order = 0
+    title = _('Activate the profile')
     context = IPerson
     roles_validation = activate_roles_validation
     processsecurity_validation = activate_processsecurity_validation
