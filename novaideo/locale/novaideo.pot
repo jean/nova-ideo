@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-02-18 15:48+0100\n"
+"POT-Creation-Date: 2015-02-19 10:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,8 +35,8 @@ msgstr ""
 #: ./novaideo/core.py:226
 #: ./novaideo/views/proposal_management/templates/idea_data.pt:5
 #: ./novaideo/views/correlation_management/templates/see_correlation.pt:10
-#: ./novaideo/content/idea.py:66 ./novaideo/content/correction.py:52
-#: ./novaideo/content/proposal.py:71 ./novaideo/content/amendment.py:230
+#: ./novaideo/content/idea.py:56 ./novaideo/content/correction.py:52
+#: ./novaideo/content/proposal.py:71 ./novaideo/content/amendment.py:229
 msgid "Text"
 msgstr ""
 
@@ -863,11 +863,11 @@ msgstr ""
 msgid "Add a new idea"
 msgstr ""
 
-#: ./novaideo/views/proposal_management/edit_proposal.py:45
+#: ./novaideo/views/proposal_management/edit_proposal.py:41
 #: ./novaideo/views/amendment_management/explanation_amendment.py:26
 #: ./novaideo/views/novaideo_view_manager/search.py:277
-#: ./novaideo/content/correlation.py:54 ./novaideo/content/idea.py:44
-#: ./novaideo/content/comment.py:33 ./novaideo/content/person.py:46
+#: ./novaideo/content/correlation.py:54 ./novaideo/content/comment.py:32
+#: ./novaideo/content/person.py:46
 msgid "- Select -"
 msgstr ""
 
@@ -889,7 +889,7 @@ msgstr ""
 #: ./novaideo/views/amendment_management/explanation_amendment.py:74
 #: ./novaideo/views/amendment_management/templates/readonly/explanation_modal_item.pt:24
 #: ./novaideo/views/amendment_management/templates/readonly/explanation_inline_item.pt:6
-#: ./novaideo/content/amendment.py:93
+#: ./novaideo/content/amendment.py:92
 #: ./novaideo/content/processes/__init__.py:21
 #: ./novaideo/content/processes/__init__.py:49
 msgid "Explanation"
@@ -984,7 +984,7 @@ msgstr ""
 #: ./novaideo/views/amendment_management/templates/see_amendment.pt:41
 #: ./novaideo/views/novaideo_view_manager/templates/see_proposal.pt:48
 #: ./novaideo/content/correction.py:46 ./novaideo/content/proposal.py:65
-#: ./novaideo/content/amendment.py:224
+#: ./novaideo/content/amendment.py:223
 msgid "Abstract"
 msgstr ""
 
@@ -1036,14 +1036,11 @@ msgid "The proposal has been sent to ${external_len} external persons."
 msgstr ""
 
 #: ./novaideo/views/proposal_management/templates/alert_submit_proposal.pt:4
-#: ./novaideo/views/amendment_management/templates/alert_amendment_submit.pt:2
 msgid ""
-"Les idées suivantes sont utilisées dans votre proposition, mais pas encore "
-"publiées. La publication de la proposition implique automatiquement que les "
-"idées qu'elle utilise soient également publiées. Souhaitez-vous retravailler "
-"vos idées avant la publication de votre proposition ? Si vous publiez la "
-"proposition en l'état, vous ne pourrez plus modifier vos idées publiées et "
-"vous devrez les dupliquer pour les travailler de nouveau."
+"Pour qu'une proposition soit publiée, l'ensemble de ses idées liées doivent "
+"être préalablement publiées. Vous pouvez soit les publier en l'état en "
+"cliquant sur « Continuer », soit les modifier une par une en cliquant sur "
+"celles qui sont à retravailler."
 msgstr ""
 
 #: ./novaideo/views/proposal_management/templates/alert_submit_proposal.pt:22
@@ -1103,7 +1100,7 @@ msgstr ""
 #: ./novaideo/views/templates/amendment_result.pt:31
 #: ./novaideo/views/amendment_management/templates/readonly/explanation_modal_item.pt:32
 #: ./novaideo/views/amendment_management/templates/readonly/explanation_inline_item.pt:14
-#: ./novaideo/content/proposal.py:77 ./novaideo/content/amendment.py:103
+#: ./novaideo/content/proposal.py:77 ./novaideo/content/amendment.py:102
 #: ./novaideo/content/processes/proposal_management/definition.py:381
 #: ./novaideo/content/processes/proposal_management/definition.py:382
 msgid "Related ideas"
@@ -1279,8 +1276,7 @@ msgid "Edit the amendment"
 msgstr ""
 
 #: ./novaideo/views/amendment_management/explanation_amendment.py:31
-#: ./novaideo/content/correlation.py:72 ./novaideo/content/idea.py:72
-#: ./novaideo/content/comment.py:89
+#: ./novaideo/content/correlation.py:72 ./novaideo/content/comment.py:89
 msgid "Intention"
 msgstr ""
 
@@ -1401,6 +1397,16 @@ msgstr ""
 #: ./novaideo/views/amendment_management/templates/description_amendments.pt:44
 #: ./novaideo/views/novaideo_view_manager/templates/see_proposal.pt:34
 msgid ", duplicated from the proposal"
+msgstr ""
+
+#: ./novaideo/views/amendment_management/templates/alert_amendment_submit.pt:2
+msgid ""
+"Les idées suivantes sont utilisées dans votre proposition, mais pas encore "
+"publiées. La publication de la proposition implique automatiquement que les "
+"idées qu'elle utilise soient également publiées. Souhaitez-vous retravailler "
+"vos idées avant la publication de votre proposition ? Si vous publiez la "
+"proposition en l'état, vous ne pourrez plus modifier vos idées publiées et "
+"vous devrez les dupliquer pour les travailler de nouveau."
 msgstr ""
 
 #: ./novaideo/views/amendment_management/templates/alert_amendment_submit.pt:18
@@ -1642,7 +1648,7 @@ msgstr ""
 msgid "Remark"
 msgstr ""
 
-#: ./novaideo/content/novaideo_application.py:34 ./novaideo/content/idea.py:73
+#: ./novaideo/content/novaideo_application.py:34
 msgid "Improvement"
 msgstr ""
 
@@ -1735,19 +1741,19 @@ msgstr ""
 msgid "Idea"
 msgstr ""
 
-#: ./novaideo/content/idea.py:83
+#: ./novaideo/content/idea.py:65
 msgid "Note"
 msgstr ""
 
-#: ./novaideo/content/idea.py:95
+#: ./novaideo/content/idea.py:78
 msgid "Attached files"
 msgstr ""
 
-#: ./novaideo/content/idea.py:90
+#: ./novaideo/content/idea.py:73
 msgid "File"
 msgstr ""
 
-#: ./novaideo/content/idea.py:93
+#: ./novaideo/content/idea.py:76
 msgid "Add file"
 msgstr ""
 
@@ -1779,15 +1785,15 @@ msgstr ""
 msgid "Reject"
 msgstr ""
 
-#: ./novaideo/content/amendment.py:70
+#: ./novaideo/content/amendment.py:69
 msgid "Apply the same intention"
 msgstr ""
 
-#: ./novaideo/content/amendment.py:71
+#: ./novaideo/content/amendment.py:70
 msgid "Choose the intention to apply"
 msgstr ""
 
-#: ./novaideo/content/amendment.py:104
+#: ./novaideo/content/amendment.py:103
 msgid "Choose related ideas."
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-02-18 15:48+0100\n"
+"POT-Creation-Date: 2015-02-19 10:19+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: SOUISSI <amensouissi@ecreall.com>\n"
 "Language-Team: \n"
@@ -28,10 +28,10 @@ msgstr "Pour ajouter des mots clés, vous devez taper sur la touche « Entrée �
 #: novaideo/core.py:226
 #: novaideo/views/proposal_management/templates/idea_data.pt:5
 #: novaideo/views/correlation_management/templates/see_correlation.pt:10
-#: novaideo/content/idea.py:66
+#: novaideo/content/idea.py:56
 #: novaideo/content/correction.py:52
 #: novaideo/content/proposal.py:71
-#: novaideo/content/amendment.py:230
+#: novaideo/content/amendment.py:229
 msgid "Text"
 msgstr "Texte"
 
@@ -847,12 +847,11 @@ msgstr "Reprendre des idées"
 msgid "Add a new idea"
 msgstr "Noter une nouvelle idée"
 
-#: novaideo/views/proposal_management/edit_proposal.py:45
+#: novaideo/views/proposal_management/edit_proposal.py:41
 #: novaideo/views/amendment_management/explanation_amendment.py:26
 #: novaideo/views/novaideo_view_manager/search.py:277
 #: novaideo/content/correlation.py:54
-#: novaideo/content/idea.py:44
-#: novaideo/content/comment.py:33
+#: novaideo/content/comment.py:32
 #: novaideo/content/person.py:46
 msgid "- Select -"
 msgstr "- Sélectionner -"
@@ -875,7 +874,7 @@ msgstr "Supression de la proposition"
 #: novaideo/views/amendment_management/explanation_amendment.py:74
 #: novaideo/views/amendment_management/templates/readonly/explanation_modal_item.pt:24
 #: novaideo/views/amendment_management/templates/readonly/explanation_inline_item.pt:6
-#: novaideo/content/amendment.py:93
+#: novaideo/content/amendment.py:92
 #: novaideo/content/processes/__init__.py:21
 #: novaideo/content/processes/__init__.py:49
 msgid "Explanation"
@@ -971,7 +970,7 @@ msgstr "Relire"
 #: novaideo/views/novaideo_view_manager/templates/see_proposal.pt:48
 #: novaideo/content/correction.py:46
 #: novaideo/content/proposal.py:65
-#: novaideo/content/amendment.py:224
+#: novaideo/content/amendment.py:223
 msgid "Abstract"
 msgstr "Résumé"
 
@@ -1014,13 +1013,12 @@ msgid "The proposal has been sent to ${external_len} external persons."
 msgstr "La proposition a été envoyée à ${external_len} personnes externes."
 
 #: novaideo/views/proposal_management/templates/alert_submit_proposal.pt:4
-#: novaideo/views/amendment_management/templates/alert_amendment_submit.pt:2
-msgid "Les idées suivantes sont utilisées dans votre proposition, mais pas encore publiées. La publication de la proposition implique automatiquement que les idées qu'elle utilise soient également publiées. Souhaitez-vous retravailler vos idées avant la publication de votre proposition ? Si vous publiez la proposition en l'état, vous ne pourrez plus modifier vos idées publiées et vous devrez les dupliquer pour les travailler de nouveau."
+msgid "Pour qu'une proposition soit publiée, l'ensemble de ses idées liées doivent être préalablement publiées. Vous pouvez soit les publier en l'état en cliquant sur « Continuer », soit les modifier une par une en cliquant sur celles qui sont à retravailler."
 msgstr ""
 
 #: novaideo/views/proposal_management/templates/alert_submit_proposal.pt:22
 msgid "As soon as the proposal has been published, it will be opened to a working group. The working group is active as soon as it reaches three persons. Once active, the working group can submit the proposal to the appreciation of the collective or decide to work together for improving it."
-msgstr "Dès que vous avez publié votre proposition, celle-ci sera ouverte à un groupe de travail. Ce dernier devient actif dès qu'il a atteint trois personnes. Une fois actif, le groupe de travail peut soit soumettre à l'appréciation du collectif la proposition en l'état, soit décider de travailler à plusieurs pour l'améliorer."
+msgstr "Dès que vous avez publié votre proposition, vous ne pourrez plus la modifier seul. Celle-ci devient ouverte à un groupe de travail, qui peut décider soit de l'améliorer, soit de la soumettre à l'appréciation des autres membres de la plateforme. Si vous publiez votre proposition, votre première action sera de voter pour ou contre l'amélioration de la proposition."
 
 #: novaideo/views/templates/add_idea_widget.pt:22
 #: novaideo/views/templates/confirmation_form.pt:26
@@ -1070,7 +1068,7 @@ msgstr "par son groupe de travail"
 #: novaideo/views/amendment_management/templates/readonly/explanation_modal_item.pt:32
 #: novaideo/views/amendment_management/templates/readonly/explanation_inline_item.pt:14
 #: novaideo/content/proposal.py:77
-#: novaideo/content/amendment.py:103
+#: novaideo/content/amendment.py:102
 #: novaideo/content/processes/proposal_management/definition.py:381
 #: novaideo/content/processes/proposal_management/definition.py:382
 msgid "Related ideas"
@@ -1247,7 +1245,6 @@ msgstr "Modifier l'amendement"
 
 #: novaideo/views/amendment_management/explanation_amendment.py:31
 #: novaideo/content/correlation.py:72
-#: novaideo/content/idea.py:72
 #: novaideo/content/comment.py:89
 msgid "Intention"
 msgstr "Intention"
@@ -1364,6 +1361,10 @@ msgstr "proposée le"
 #: novaideo/views/novaideo_view_manager/templates/see_proposal.pt:34
 msgid ", duplicated from the proposal"
 msgstr ", dupliquée à partir de la proposition"
+
+#: novaideo/views/amendment_management/templates/alert_amendment_submit.pt:2
+msgid "Les idées suivantes sont utilisées dans votre proposition, mais pas encore publiées. La publication de la proposition implique automatiquement que les idées qu'elle utilise soient également publiées. Souhaitez-vous retravailler vos idées avant la publication de votre proposition ? Si vous publiez la proposition en l'état, vous ne pourrez plus modifier vos idées publiées et vous devrez les dupliquer pour les travailler de nouveau."
+msgstr ""
 
 #: novaideo/views/amendment_management/templates/alert_amendment_submit.pt:18
 msgid "La répartition des modifications en différents amendements vous permet d'avoir plus de chance de faire passer vos modifications auprès des autres participants. Vous pouvez pour cela glisser déposer vos modifications dans plusieurs conteneurs différents, chaque conteneur correspondant à un amendement. Vous pouvez aussi choisir de soumettre l'ensemble de vos modifications en un seul amendement."
@@ -1591,7 +1592,6 @@ msgid "Remark"
 msgstr "Remarque"
 
 #: novaideo/content/novaideo_application.py:34
-#: novaideo/content/idea.py:73
 msgid "Improvement"
 msgstr "Amélioration"
 
@@ -1684,19 +1684,19 @@ msgstr ""
 msgid "Idea"
 msgstr "Idée"
 
-#: novaideo/content/idea.py:83
+#: novaideo/content/idea.py:65
 msgid "Note"
 msgstr "Note de modification"
 
-#: novaideo/content/idea.py:95
+#: novaideo/content/idea.py:78
 msgid "Attached files"
 msgstr "Pièces jointes"
 
-#: novaideo/content/idea.py:90
+#: novaideo/content/idea.py:73
 msgid "File"
 msgstr "Fichier"
 
-#: novaideo/content/idea.py:93
+#: novaideo/content/idea.py:76
 msgid "Add file"
 msgstr "Ajouter une pièce jointe"
 
@@ -1728,15 +1728,15 @@ msgstr "Insuffisant"
 msgid "Reject"
 msgstr "À rejeter"
 
-#: novaideo/content/amendment.py:70
+#: novaideo/content/amendment.py:69
 msgid "Apply the same intention"
 msgstr "Appliquer la même intention"
 
-#: novaideo/content/amendment.py:71
+#: novaideo/content/amendment.py:70
 msgid "Choose the intention to apply"
 msgstr "Choisissez l'intention à appliquer"
 
-#: novaideo/content/amendment.py:104
+#: novaideo/content/amendment.py:103
 msgid "Choose related ideas."
 msgstr "Sélectionner les idées liées"
 
