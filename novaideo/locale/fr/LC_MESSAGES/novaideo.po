@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-02-19 15:37+0100\n"
+"POT-Creation-Date: 2015-03-04 12:36+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: SOUISSI <amensouissi@ecreall.com>\n"
 "Language-Team: \n"
@@ -499,7 +499,7 @@ msgstr "Réinitialiser le mot de passe"
 #: novaideo/views/user_management/reset_password.py:75
 #: novaideo/views/user_management/templates/login.pt:14
 #: novaideo/content/person.py:131
-msgid "Email"
+msgid "Login (email)"
 msgstr "Identifiant (courriel)"
 
 #: novaideo/views/user_management/reset_password.py:132
