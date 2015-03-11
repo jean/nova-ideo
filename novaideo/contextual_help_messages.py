@@ -59,6 +59,10 @@ CONTEXTUAL_HELP_MESSAGES = {
 	   (None, 'novaideo:views/templates/panels/'
 	   	      'contextual_help_messages/proposal_open_to_a_working_group.pt', 1)],
 
+	(Proposal, 'proofreading', 'correctproposal'): [
+	   (None, 'novaideo:views/templates/panels/'
+	   	      'contextual_help_messages/proposal_proofreading_edit.pt', 1)],
+
 	(Proposal, 'votes for publishing', 'index'): [
 	   (proposal_first_vote, 'novaideo:views/templates/panels/'
 	   	      'contextual_help_messages/proposal_first_vote.pt', 1)],
@@ -70,6 +74,10 @@ CONTEXTUAL_HELP_MESSAGES = {
 	(Idea, 'to work', 'index'): [
 	   (None, 'novaideo:views/templates/panels/'
 	   	                    'contextual_help_messages/idea_to_work.pt', 1)],
+
+        (Idea, 'to work', 'editidea'): [
+           (None, 'novaideo:views/templates/panels/'
+                          'contextual_help_messages/idea_to_work_edit.pt', 1)],
 
 	(Idea, 'archived', 'index'): [
 	   (None, 'novaideo:views/templates/panels/'

@@ -1,14 +1,14 @@
 <div>
     <p>
-        Les idées publiées sont visibles par l'ensemble des utilisateurs.
+       Les idées publiées sont visibles par l'ensemble des utilisateurs et ne peuvent plus être modifiées. 
+    </p>
+    <p>
+       Elles peuvent être dupliquées pour qu'une copie soit travaillée différemment ou vous pouvez les ajouter à vos favoris.
     </p>
     <p>
         Elles peuvent être transformées en proposition ou utilisées dans des propositions existantes par n'importe quel membre de la plateforme.
     </p>
     <p>
-        Elles peuvent également être dupliquées pour qu'une copie soit travaillée différemment ou vous pouvez les ajouter à vos favoris.
-    </p>
-    <p>
-        Elles peuvent enfin être communiquées à des tiers ou discutées entre membres.
+        Elles peuvent aussi être communiquées à des tiers ou discutées entre membres.
     </p>
 </div>

@@ -29,7 +29,7 @@ CONFIRMATION_SUBJECT = u"""Confirmation de votre inscription"""
 CONFIRMATION_MESSAGE = u"""
 Bonjour,
 
-Bienvenue sur la plateforme {novaideo_title}. L'accès à la plateforme se fait sous {login_url}. Pour y ajouter des idées ou des propositions, vous devez préalablement vous identifier avec votre courriel et votre mot de passe.
+Vous êtes dorénavant inscrit sur la plateforme {novaideo_title}. L'accès à la plateforme se fait sous {login_url}. Une fois connecté avec votre identifiant (votre courriel) et votre mot de passe, vous pourrez noter une idée, accéder à vos éléments et intervenir sur une idée ou une proposition.
 
 """ + PORTAL_SIGNATURE
 
