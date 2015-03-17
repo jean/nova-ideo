@@ -92,7 +92,6 @@ class DetailProposalView(BasicView):
 
         return False
 
-
     def update(self):
         self.execute(None)
         user = get_current()
