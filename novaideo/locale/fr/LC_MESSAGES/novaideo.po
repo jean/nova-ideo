@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-03-17 15:05+0100\n"
+"POT-Creation-Date: 2015-03-17 15:26+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: SOUISSI <amensouissi@ecreall.com>\n"
 "Language-Team: \n"
@@ -139,11 +139,15 @@ msgid "Alert for publication"
 msgstr "Alerte pour publication"
 
 #: novaideo/views/idea_management/publish_idea.py:36
-#: novaideo/views/idea_management/publish_idea.py:49
 #: novaideo/content/processes/idea_management/definition.py:71
 #: novaideo/content/processes/proposal_management/definition.py:308
 msgid "Publish"
 msgstr "Publier"
+
+#: novaideo/views/idea_management/publish_idea.py:49
+#: novaideo/content/processes/idea_management/definition.py:70
+msgid "Publish the idea"
+msgstr "Publier l'idée"
 
 #: novaideo/views/idea_management/compare_idea.py:28
 msgid "Pas de versions"
@@ -1891,10 +1895,6 @@ msgstr "Supprimer l'idée"
 #: novaideo/content/processes/idea_management/definition.py:66
 msgid "Edit the idea"
 msgstr "Modifier l'idée"
-
-#: novaideo/content/processes/idea_management/definition.py:70
-msgid "Publish the idea"
-msgstr "Publier l'idée"
 
 #: novaideo/content/processes/idea_management/definition.py:74
 msgid "Recuperate the idea"
