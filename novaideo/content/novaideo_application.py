@@ -27,13 +27,7 @@ from novaideo import _
 
 DEFAULT_TITLES = [_('Mr'), _('Madam'), _('Miss')]
 
-DEFAULT_COMMENT_INTENTIONS = [_('Irony'), _('Humor'), _('Remark')]
-
-DEFAULT_CORRELATION_INTENTIONS = [_('Irony'), _('Humor'), _('Remark')]
-
-DEFAULT_IDEA_INTENTIONS = [_('Improvement'), _('Humor'), _('Irony')]
-
-DEFAULT_AMENDMENT_INTENTIONS = [
+DEFAULT_COMMENT_INTENTIONS = [
             _('Changing an idea'),
             _('Propose improvements'),
             _('Reformulate'),
@@ -42,8 +36,13 @@ DEFAULT_AMENDMENT_INTENTIONS = [
             _('Ask a question'),
             _('Review'),
             _('Irony'),
-            _('Use humor')
-        ]
+            _('Use humor')]
+
+DEFAULT_CORRELATION_INTENTIONS = [_('Irony'), _('Humor'), _('Remark')]
+
+DEFAULT_IDEA_INTENTIONS = [_('Improvement'), _('Humor'), _('Irony')]
+
+DEFAULT_AMENDMENT_INTENTIONS = [_('Irony'), _('Humor'), _('Remark')]
 
 
 def context_is_a_root(context, request):
