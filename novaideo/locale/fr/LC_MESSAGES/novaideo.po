@@ -483,7 +483,7 @@ msgstr "Alerte pour supression"
 
 #: novaideo/views/user_management/reset_password.py:94
 msgid "Request Password Reset"
-msgstr "Réinitialisation du mot de passe"
+msgstr "Lancer la procédure de changement de mot de passe"
 
 #: novaideo/views/user_management/reset_password.py:105
 #: novaideo/views/proposal_management/submit_proposal.py:38
