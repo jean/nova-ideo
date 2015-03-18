@@ -9,7 +9,9 @@ import datetime
 from collections import OrderedDict
 from pyramid import renderers
 from pyramid_layout.panel import panel_config
+from pyramid.threadlocal import get_current_registry
 
+from daceui.interfaces import IDaceUIAPI
 from dace.objectofcollaboration.entity import Entity
 from dace.util import getBusinessAction, getSite, find_catalog
 from dace.objectofcollaboration.principal.util import get_current
@@ -32,6 +34,7 @@ from novaideo.content.novaideo_application import NovaIdeoApplication
 from novaideo.core import _
 from novaideo.content.processes import get_states_mapping
 from novaideo.contextual_help_messages import CONTEXTUAL_HELP_MESSAGES
+from novaideo.content.processes.user_management.behaviors import global_user_processsecurity
 
 
 USER_MENU_ACTIONS = {'menu1': [SeeMyContents, SeeMyParticipations],
@@ -193,7 +196,6 @@ class NovaideoContents(object):
         return result
 
 
-
 def days_hours_minutes(timed):
     return (timed.days, 
            timed.seconds//3600,
@@ -340,6 +342,75 @@ class StepsPanel(object):
                                                                    self.request)
 
         return result
+
+
+GROUPS_PICTO = {
+                'More': 'glyphicon glyphicon-cog',
+                'See': 'glyphicon glyphicon-eye-open',
+                'Add': 'glyphicon glyphicon-plus',
+                'Edit': 'glyphicon glyphicon-pencil',    
+             }
+
+def group_actions(actions):
+    groups = {}
+    for action in actions:
+        group_id = _('More')
+        if action[1].node_definition.groups:
+            group_id = action[1].node_definition.groups[0]
+
+        group = groups.get(group_id, None)
+        if group:
+            group.append(action)
+        else:
+            groups[group_id] = [action]
+ 
+    for group_id, group in groups.items():
+        groups[group_id] = sorted(group, 
+                           key=lambda e: getattr(e[1], 'style_order', 0))
+    groups = sorted(list(groups.items()), 
+                    key=lambda g: getattr(g[1][0][1], 'style_order', 0))
+    return groups
+
+
+@panel_config(
+    name='adminnavbar',
+    context = Entity ,
+    renderer='templates/panels/admin_navbar.pt'
+    )
+class Adminnavbar_panel(object):
+
+    processids = ['novaideoabstractprocess',
+                  'novaideoviewmanager',
+                  'novaideofilemanagement',
+                  'novaideoprocessmanagement']
+
+    def __init__(self, context, request):
+        self.context = context
+        self.request = request
+
+    def _get_actions(self, context, processid):
+        dace_ui_api = get_current_registry().getUtility(IDaceUIAPI,
+                                                        'dace_ui_api')
+        return dace_ui_api.get_actions(
+                            [context], self.request,
+                            process_or_id=processid)
+
+    def __call__(self):
+        root = getSite()
+        if not global_user_processsecurity(None, root):
+            return {'error': True}
+
+        actions = []
+        for processid in self.processids:
+            actions.extend(self._get_actions(root, processid))
+
+        admin_actions = [a for a in  actions \
+                        if getattr(a[1], 'style_descriminator','') == \
+                          'admin-action']
+        grouped_actions = group_actions(admin_actions)
+        return {'groups': grouped_actions,
+                'pictos': GROUPS_PICTO,
+                'error': False}
 
 
 @panel_config(
