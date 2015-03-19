@@ -7,7 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
 <<<<<<< HEAD
+<<<<<<< HEAD
 "POT-Creation-Date: 2015-03-18 18:53+0100\n"
+=======
+"POT-Creation-Date: 2015-03-18 21:42+0100\n"
+>>>>>>> 7299243... add social share panel
 =======
 "POT-Creation-Date: 2015-03-18 21:42+0100\n"
 >>>>>>> 7299243... add social share panel
@@ -118,6 +122,9 @@ msgstr ""
 =======
 #: ./novaideo/content/processes/idea_management/definition.py:65
 #: ./novaideo/content/processes/proposal_management/definition.py:283
+<<<<<<< HEAD
+>>>>>>> 7299243... add social share panel
+=======
 >>>>>>> 7299243... add social share panel
 #: ./novaideo/content/processes/amendment_management/definition.py:53
 msgid "Delete"
@@ -164,6 +171,9 @@ msgstr ""
 =======
 #: ./novaideo/content/processes/idea_management/definition.py:77
 #: ./novaideo/content/processes/proposal_management/definition.py:295
+<<<<<<< HEAD
+>>>>>>> 7299243... add social share panel
+=======
 >>>>>>> 7299243... add social share panel
 msgid "Publish"
 msgstr ""
@@ -201,6 +211,9 @@ msgstr ""
 =======
 #: ./novaideo/content/processes/idea_management/definition.py:108
 #: ./novaideo/content/processes/proposal_management/definition.py:399
+<<<<<<< HEAD
+>>>>>>> 7299243... add social share panel
+=======
 >>>>>>> 7299243... add social share panel
 msgid "Compare versions"
 msgstr ""
@@ -254,6 +267,9 @@ msgstr ""
 =======
 #: ./novaideo/content/processes/idea_management/definition.py:101
 #: ./novaideo/content/processes/proposal_management/definition.py:372
+<<<<<<< HEAD
+>>>>>>> 7299243... add social share panel
+=======
 >>>>>>> 7299243... add social share panel
 #: ./novaideo/content/processes/amendment_management/definition.py:85
 msgid "Associate"
@@ -564,6 +580,9 @@ msgstr ""
 =======
 #: ./novaideo/content/processes/user_management/behaviors.py:143
 #: ./novaideo/content/processes/proposal_management/definition.py:299
+<<<<<<< HEAD
+>>>>>>> 7299243... add social share panel
+=======
 >>>>>>> 7299243... add social share panel
 #: ./novaideo/content/processes/amendment_management/definition.py:61
 msgid "Edit"
@@ -789,7 +808,11 @@ msgstr ""
 
 #: ./novaideo/views/proposal_management/correct_proposal.py:28
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:374
+=======
+#: ./novaideo/content/processes/proposal_management/definition.py:379
+>>>>>>> 7299243... add social share panel
 =======
 #: ./novaideo/content/processes/proposal_management/definition.py:379
 >>>>>>> 7299243... add social share panel
@@ -803,10 +826,13 @@ msgstr ""
 
 #: ./novaideo/views/proposal_management/publish_proposal.py:24
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:155
 #: ./novaideo/content/processes/proposal_management/definition.py:334
 #: ./novaideo/content/processes/proposal_management/behaviors.py:166
 =======
+=======
+>>>>>>> 7299243... add social share panel
 #: ./novaideo/content/processes/proposal_management/definition.py:157
 #: ./novaideo/content/processes/proposal_management/definition.py:335
 #: ./novaideo/content/processes/proposal_management/behaviors.py:168
@@ -818,7 +844,11 @@ msgstr ""
 #: ./novaideo/views/proposal_management/present_proposal.py:102
 #: ./novaideo/views/proposal_management/present_proposal.py:103
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:354
+=======
+#: ./novaideo/content/processes/proposal_management/definition.py:359
+>>>>>>> 7299243... add social share panel
 =======
 #: ./novaideo/content/processes/proposal_management/definition.py:359
 >>>>>>> 7299243... add social share panel
@@ -866,14 +896,22 @@ msgstr ""
 #: ./novaideo/content/processes/__init__.py:34
 #: ./novaideo/content/processes/__init__.py:68
 #: ./novaideo/content/processes/proposal_management/definition.py:331
+<<<<<<< HEAD
+>>>>>>> 7299243... add social share panel
+=======
 >>>>>>> 7299243... add social share panel
 msgid "Amendable"
 msgstr ""
 
 #: ./novaideo/views/proposal_management/proofreading_done.py:24
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:382
 #: ./novaideo/content/processes/proposal_management/definition.py:383
+=======
+#: ./novaideo/content/processes/proposal_management/definition.py:387
+#: ./novaideo/content/processes/proposal_management/definition.py:388
+>>>>>>> 7299243... add social share panel
 =======
 #: ./novaideo/content/processes/proposal_management/definition.py:387
 #: ./novaideo/content/processes/proposal_management/definition.py:388
@@ -883,8 +921,13 @@ msgstr ""
 
 #: ./novaideo/views/proposal_management/add_paragraph.py:24
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:386
 #: ./novaideo/content/processes/proposal_management/definition.py:387
+=======
+#: ./novaideo/content/processes/proposal_management/definition.py:391
+#: ./novaideo/content/processes/proposal_management/definition.py:392
+>>>>>>> 7299243... add social share panel
 =======
 #: ./novaideo/content/processes/proposal_management/definition.py:391
 #: ./novaideo/content/processes/proposal_management/definition.py:392
@@ -894,7 +937,11 @@ msgstr ""
 
 #: ./novaideo/views/proposal_management/associate.py:51
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:366
+=======
+#: ./novaideo/content/processes/proposal_management/definition.py:371
+>>>>>>> 7299243... add social share panel
 =======
 #: ./novaideo/content/processes/proposal_management/definition.py:371
 >>>>>>> 7299243... add social share panel
@@ -907,7 +954,11 @@ msgstr ""
 
 #: ./novaideo/views/proposal_management/improve_proposal.py:27
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:391
+=======
+#: ./novaideo/content/processes/proposal_management/definition.py:396
+>>>>>>> 7299243... add social share panel
 =======
 #: ./novaideo/content/processes/proposal_management/definition.py:396
 >>>>>>> 7299243... add social share panel
@@ -928,7 +979,11 @@ msgstr ""
 #: ./novaideo/views/proposal_management/create_proposal.py:77
 #: ./novaideo/views/proposal_management/create_proposal.py:102
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:277
+=======
+#: ./novaideo/content/processes/proposal_management/definition.py:279
+>>>>>>> 7299243... add social share panel
 =======
 #: ./novaideo/content/processes/proposal_management/definition.py:279
 >>>>>>> 7299243... add social share panel
@@ -1007,7 +1062,11 @@ msgstr ""
 
 #: ./novaideo/views/proposal_management/withdraw_token.py:24
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:347
+=======
+#: ./novaideo/content/processes/proposal_management/definition.py:352
+>>>>>>> 7299243... add social share panel
 =======
 #: ./novaideo/content/processes/proposal_management/definition.py:352
 >>>>>>> 7299243... add social share panel
@@ -1047,13 +1106,20 @@ msgstr ""
 
 #: ./novaideo/views/proposal_management/submit_proposal.py:122
 #: ./novaideo/content/processes/proposal_management/definition.py:294
+<<<<<<< HEAD
+>>>>>>> 7299243... add social share panel
+=======
 >>>>>>> 7299243... add social share panel
 msgid "Publish the proposal"
 msgstr ""
 
 #: ./novaideo/views/proposal_management/oppose_proposal.py:24
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:343
+=======
+#: ./novaideo/content/processes/proposal_management/definition.py:348
+>>>>>>> 7299243... add social share panel
 =======
 #: ./novaideo/content/processes/proposal_management/definition.py:348
 >>>>>>> 7299243... add social share panel
@@ -1064,7 +1130,11 @@ msgstr ""
 #: ./novaideo/views/proposal_management/comment_proposal.py:51
 #: ./novaideo/views/proposal_management/comment_proposal.py:52
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:358
+=======
+#: ./novaideo/content/processes/proposal_management/definition.py:363
+>>>>>>> 7299243... add social share panel
 =======
 #: ./novaideo/content/processes/proposal_management/definition.py:363
 >>>>>>> 7299243... add social share panel
@@ -1073,8 +1143,13 @@ msgstr ""
 
 #: ./novaideo/views/proposal_management/amendments_result.py:24
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:350
 #: ./novaideo/content/processes/proposal_management/definition.py:351
+=======
+#: ./novaideo/content/processes/proposal_management/definition.py:355
+#: ./novaideo/content/processes/proposal_management/definition.py:356
+>>>>>>> 7299243... add social share panel
 =======
 #: ./novaideo/content/processes/proposal_management/definition.py:355
 #: ./novaideo/content/processes/proposal_management/definition.py:356
@@ -1107,8 +1182,13 @@ msgstr ""
 
 #: ./novaideo/views/proposal_management/correct_item.py:25
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:375
 #: ./novaideo/content/processes/proposal_management/definition.py:379
+=======
+#: ./novaideo/content/processes/proposal_management/definition.py:380
+#: ./novaideo/content/processes/proposal_management/definition.py:384
+>>>>>>> 7299243... add social share panel
 =======
 #: ./novaideo/content/processes/proposal_management/definition.py:380
 #: ./novaideo/content/processes/proposal_management/definition.py:384
@@ -1246,6 +1326,9 @@ msgstr ""
 #: ./novaideo/content/proposal.py:85 ./novaideo/content/amendment.py:107
 #: ./novaideo/content/processes/proposal_management/definition.py:375
 #: ./novaideo/content/processes/proposal_management/definition.py:376
+<<<<<<< HEAD
+>>>>>>> 7299243... add social share panel
+=======
 >>>>>>> 7299243... add social share panel
 msgid "Related ideas"
 msgstr ""
@@ -2120,6 +2203,9 @@ msgstr ""
 =======
 #: ./novaideo/content/processes/idea_management/definition.py:93
 #: ./novaideo/content/processes/proposal_management/definition.py:360
+<<<<<<< HEAD
+>>>>>>> 7299243... add social share panel
+=======
 >>>>>>> 7299243... add social share panel
 #: ./novaideo/content/processes/amendment_management/definition.py:77
 msgid "Submit to others"
@@ -2131,6 +2217,9 @@ msgstr ""
 =======
 #: ./novaideo/content/processes/idea_management/definition.py:97
 #: ./novaideo/content/processes/proposal_management/definition.py:364
+<<<<<<< HEAD
+>>>>>>> 7299243... add social share panel
+=======
 >>>>>>> 7299243... add social share panel
 #: ./novaideo/content/processes/amendment_management/definition.py:81
 msgid "Discuss"
@@ -2257,6 +2346,7 @@ msgid "Two weeks"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:259
 #: ./novaideo/content/processes/proposal_management/definition.py:260
 msgid "Proposals management"
@@ -2273,6 +2363,8 @@ msgstr ""
 
 #: ./novaideo/content/processes/proposal_management/definition.py:242
 =======
+=======
+>>>>>>> 7299243... add social share panel
 #: ./novaideo/content/processes/proposal_management/definition.py:261
 #: ./novaideo/content/processes/proposal_management/definition.py:262
 msgid "Proposals management"
@@ -2288,11 +2380,15 @@ msgid "Amendment duration"
 msgstr ""
 
 #: ./novaideo/content/processes/proposal_management/definition.py:244
+<<<<<<< HEAD
+>>>>>>> 7299243... add social share panel
+=======
 >>>>>>> 7299243... add social share panel
 #, python-format
 msgid "Vote for amendments (group ${nbi})"
 msgstr ""
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:276
 msgid "Create a new proposal"
@@ -2329,6 +2425,20 @@ msgstr ""
 msgid "Transform the idea as a proposal"
 msgstr ""
 
+=======
+#: ./novaideo/content/processes/proposal_management/definition.py:278
+msgid "Create a new proposal"
+msgstr ""
+
+#: ./novaideo/content/processes/proposal_management/definition.py:282
+msgid "Delete the proposal"
+msgstr ""
+
+#: ./novaideo/content/processes/proposal_management/definition.py:286
+msgid "Transform the idea as a proposal"
+msgstr ""
+
+>>>>>>> 7299243... add social share panel
 #: ./novaideo/content/processes/proposal_management/definition.py:287
 msgid "Transform as a proposal"
 msgstr ""
@@ -2366,6 +2476,7 @@ msgid "Support the proposal"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: ./novaideo/content/processes/proposal_management/definition.py:342
 msgid "To oppose a proposal"
 msgstr ""
@@ -2385,6 +2496,8 @@ msgstr ""
 
 #: ./novaideo/content/processes/proposal_management/definition.py:390
 =======
+=======
+>>>>>>> 7299243... add social share panel
 #: ./novaideo/content/processes/proposal_management/definition.py:343
 #: ./novaideo/content/processes/proposal_management/definition.py:344
 msgid "Make its opinion"
@@ -2408,6 +2521,9 @@ msgid "Correct item"
 msgstr ""
 
 #: ./novaideo/content/processes/proposal_management/definition.py:395
+<<<<<<< HEAD
+>>>>>>> 7299243... add social share panel
+=======
 >>>>>>> 7299243... add social share panel
 msgid "Improve the proposal"
 msgstr ""

@@ -130,3 +130,4 @@ class Proposal(Commentable,
     def is_published(self):
         return 'draft' not in self.state
 
+
