@@ -125,3 +125,8 @@ class Proposal(Commentable,
         result = list(self.tokens_opposition)
         result.extend(list(self.tokens_support))
         return result
+
+    @property
+    def is_published(self):
+        return 'draft' not in self.state
+
