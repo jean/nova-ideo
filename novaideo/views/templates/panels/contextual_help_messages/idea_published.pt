@@ -1,4 +1,5 @@
-<div>
+
+<div class="contextual-help-item principal-help">
     <p>
        Les idées publiées sont visibles par l'ensemble des utilisateurs et ne peuvent plus être modifiées. 
     </p>
@@ -12,3 +13,4 @@
         Elles peuvent aussi être communiquées à des tiers ou discutées entre membres.
     </p>
 </div>
+
