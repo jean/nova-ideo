@@ -147,6 +147,22 @@ AMENDMENTS_CYCLE_DEFAULT_DURATION = {
 DEFAULT_NB_CORRECTORS = 1
 
 
+def eg3_publish_condition(process):
+    report = process.vp_ballot.report
+    if not getattr(process, 'first_vote', True):
+        electeds = report.get_electeds()
+        if electeds is None:
+            return True
+        else:
+            return False
+
+    report.calculate_votes()
+    if report.result['False'] == 0:
+        return True
+
+    return False
+
+
 def close_votes(context, request, vote_processes):
     vote_actions = [process.get_actions('vote') \
                     for process in vote_processes]
@@ -609,7 +625,7 @@ def pub_relation_validation(process, context):
 
 
 def pub_roles_validation(process, context):
-    return has_role(role=('System',))
+    return has_role(role=('Admin',))
 
 
 def pub_state_validation(process, context):
@@ -624,7 +640,7 @@ class PublishProposal(ElementaryAction):
     style_order = 2
     context = IProposal
     processs_relation_id = 'proposal'
-    actionType = ActionType.system
+    #actionType = ActionType.system
     roles_validation = pub_roles_validation
     relation_validation = pub_relation_validation
     state_validation = pub_state_validation
@@ -1322,14 +1338,21 @@ class VotingPublication(ElementaryAction):
         return {}
 
     def after_execution(self, context, request, **kw):
-        exec_ctx = self.sub_process.execution_context
-        vote_processes = exec_ctx.get_involved_collection('vote_processes')
-        vote_processes = [process for process in vote_processes \
-                          if not process._finished]
-        if vote_processes:
-            close_votes(context, request, vote_processes)
+        proposal = self.process.execution_context.involved_entity('proposal')
+        if self.sub_process:
+            exec_ctx = self.sub_process.execution_context
+            vote_processes = exec_ctx.get_involved_collection('vote_processes')
+            vote_processes = [process for process in vote_processes \
+                              if not process._finished]
+            if vote_processes:
+                close_votes(proposal, request, vote_processes)
 
-        super(VotingPublication, self).after_execution(context, request, **kw)
+        super(VotingPublication, self).after_execution(proposal, request, **kw)
+        is_published = eg3_publish_condition(self.process)
+        if is_published:
+            self.process.execute_action(proposal, request, 'publish', {})
+        else:
+            self.process.execute_action(proposal, request, 'amendable', {})
 
     def redirect(self, context, request, **kw):
         return HTTPFound(request.resource_url(context, "@@index"))
@@ -1804,6 +1827,10 @@ class AmendmentsResult(ElementaryAction):
         return HTTPFound(request.resource_url(self.newcontext, "@@index"))
 
 
+def ta_roles_validation(process, context):
+    return has_role(role=('Admin',))
+
+
 def ta_state_validation(process, context):
     return 'active' in context.working_group.state and \
            'votes for publishing' in context.state
@@ -1815,9 +1842,9 @@ class Amendable(ElementaryAction):
     style_order = 8
     context = IProposal
     processs_relation_id = 'proposal'
-    actionType = ActionType.system
+    #actionType = ActionType.system
     relation_validation = va_relation_validation
-    roles_validation = va_roles_validation
+    roles_validation = ta_roles_validation
     state_validation = ta_state_validation
 
     def _send_mails(self, context, request, subject_template, message_template):
