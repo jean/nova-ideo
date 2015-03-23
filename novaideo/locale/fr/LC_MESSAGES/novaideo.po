@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-03-23 18:30+0100\n"
+"POT-Creation-Date: 2015-03-23 18:47+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: SOUISSI <amensouissi@ecreall.com>\n"
 "Language-Team: \n"
@@ -128,7 +128,7 @@ msgstr "Supprimer"
 #: novaideo/content/processes/user_management/behaviors.py:244
 #: novaideo/content/processes/amendment_management/definition.py:88
 #: novaideo/content/processes/amendment_management/definition.py:89
-#: novaideo/content/processes/amendment_management/behaviors.py:513
+#: novaideo/content/processes/amendment_management/behaviors.py:514
 #: novaideo/content/processes/novaideo_view_manager/definition.py:64
 #: novaideo/content/processes/novaideo_view_manager/definition.py:65
 #: novaideo/content/processes/novaideo_view_manager/behaviors.py:139
@@ -502,6 +502,7 @@ msgstr "Lancer la procédure de changement de mot de passe"
 #: novaideo/views/amendment_management/submit.py:160
 #: novaideo/content/processes/proposal_management/definition.py:328
 #: novaideo/content/processes/amendment_management/definition.py:73
+#: novaideo/content/processes/amendment_management/behaviors.py:341
 msgid "Submit"
 msgstr "Soumettre"
 
@@ -1376,7 +1377,8 @@ msgid "The amendement has been sent to ${external_len} external persons."
 msgstr "L'amendement a été envoyée à ${external_len} personnes externes."
 
 #: novaideo/views/amendment_management/templates/explanation_modal_item.pt:11
-msgid "Explain your improvements"
+#, fuzzy
+msgid "Explain your improvement"
 msgstr "Expliquer votre amélioration"
 
 #: novaideo/views/amendment_management/templates/explanation_modal_item.pt:28
@@ -1928,7 +1930,6 @@ msgstr ""
 #: novaideo/content/processes/proposal_management/behaviors.py:1545
 #: novaideo/content/processes/amendment_management/behaviors.py:100
 #: novaideo/content/processes/amendment_management/behaviors.py:198
-#: novaideo/content/processes/amendment_management/behaviors.py:340
 msgid "Save"
 msgstr "Enregistrer"
 
@@ -2239,6 +2240,10 @@ msgstr "Supprimer l'amendement"
 #: novaideo/content/processes/amendment_management/definition.py:72
 msgid "Submit the amendment"
 msgstr "Soumettre l'amendment"
+
+#: novaideo/content/processes/amendment_management/behaviors.py:340
+msgid "Prepare amendments"
+msgstr "Préparer des amendements"
 
 #: novaideo/content/processes/novaideo_view_manager/definition.py:36
 #: novaideo/content/processes/novaideo_view_manager/definition.py:37
