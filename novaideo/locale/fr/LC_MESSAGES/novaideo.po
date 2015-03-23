@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-03-23 19:14+0100\n"
+"POT-Creation-Date: 2015-03-23 19:25+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: SOUISSI <amensouissi@ecreall.com>\n"
 "Language-Team: \n"
@@ -502,7 +502,6 @@ msgstr "Lancer la procédure de changement de mot de passe"
 #: novaideo/views/amendment_management/submit.py:160
 #: novaideo/content/processes/proposal_management/definition.py:328
 #: novaideo/content/processes/amendment_management/definition.py:73
-#: novaideo/content/processes/amendment_management/behaviors.py:341
 msgid "Submit"
 msgstr "Soumettre"
 
@@ -1322,8 +1321,9 @@ msgid "Justification item"
 msgstr "Justification de l'item"
 
 #: novaideo/views/amendment_management/submit.py:186
-msgid "Amendments organization"
-msgstr "Organisation des amendements"
+#: novaideo/content/processes/amendment_management/behaviors.py:340
+msgid "Prepare amendments"
+msgstr "Préparer des amendements"
 
 #: novaideo/views/amendment_management/submit.py:75
 msgid "Explanations"
@@ -1339,12 +1339,12 @@ msgid "Justification"
 msgstr "Justification"
 
 #: novaideo/views/amendment_management/submit.py:105
-msgid "Organize your changes in amendments"
-msgstr "Organiser vos modifications en amendements"
+msgid "Group your improvements into amendments"
+msgstr "Regrouper vos améliorations en amendements"
 
 #: novaideo/views/amendment_management/submit.py:111
-msgid "Gather changes in a single amendment"
-msgstr "Regrouper les modifications en un seul amendement"
+msgid "Gather improvements in a single amendment"
+msgstr "Regrouper les améliorations en un seul amendement"
 
 #: novaideo/views/amendment_management/templates/explanations_amendment.pt:1
 msgid "Pour que les autres participants puissent se prononcer sur vos améliorations, vous devez les expliquer. Vous pouvez donner la même explication à plusieurs améliorations en même temps. Une fois que vous avez expliqué l'ensemble de vos améliorations, vous pourrez préparer vos amendements et les soumettre aux autres participants."
@@ -2244,9 +2244,9 @@ msgstr "Supprimer l'amendement"
 msgid "Submit the amendment"
 msgstr "Soumettre l'amendment"
 
-#: novaideo/content/processes/amendment_management/behaviors.py:340
-msgid "Prepare amendments"
-msgstr "Préparer des amendements"
+#: novaideo/content/processes/amendment_management/behaviors.py:341
+msgid "Submit my amendments"
+msgstr "Soumettre mes amendements"
 
 #: novaideo/content/processes/novaideo_view_manager/definition.py:36
 #: novaideo/content/processes/novaideo_view_manager/definition.py:37
