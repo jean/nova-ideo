@@ -62,13 +62,14 @@ class Registration(InfiniteCardinality):
             person.addtoproperty('tokens', token)
             token.setproperty('owner', person)
 
+        subject = CONFIRMATION_SUBJECT.format(novaideo_title=request.root.title)
         message = CONFIRMATION_MESSAGE.format(
                     person=person,
                     user_title=localizer.translate(
                                    _(getattr(person, 'user_title', ''))),
                     login_url=request.resource_url(root, '@@login'),
                     novaideo_title=request.root.title)
-        mailer_send(subject=CONFIRMATION_SUBJECT,
+        mailer_send(subject=subject,
                 recipients=[person.email], body=message)
 
         person.reindex()

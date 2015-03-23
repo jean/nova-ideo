@@ -24,7 +24,7 @@ Bonjour,
 PRESENTATION_IDEA_SUBJECT = u"""{subject_title}""" 
 
 
-CONFIRMATION_SUBJECT = u"""Confirmation de votre inscription"""
+CONFIRMATION_SUBJECT = u"""Confirmation de votre inscription sur la plateforme {novaideo_title}"""
 
 CONFIRMATION_MESSAGE = u"""
 Bonjour et bienvenue,
