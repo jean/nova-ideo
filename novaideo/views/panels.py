@@ -211,6 +211,7 @@ def days_hours_minutes(timed):
 class StepsPanel(object):
 
     step1_0_template = 'novaideo:views/templates/panels/step1_0.pt'
+    step2_0_template = 'novaideo:views/templates/panels/step2_0.pt'
     step4_template = 'novaideo:views/templates/panels/step4.pt'
     step3_0_template = 'novaideo:views/templates/panels/step3_0.pt'
     step3_1_template = 'novaideo:views/templates/panels/step3_1.pt'
@@ -226,6 +227,31 @@ class StepsPanel(object):
             return self.context.proposal
 
         return self.context
+
+    def _get_step1_informations(self, context, request):
+        proposal_nember = len(list(dict(context.related_proposals).keys()))
+        duplicates_len = len(context.duplicates)
+        return renderers.render(self.step1_0_template,
+                                {'context':context,
+                                 'proposal_nember': proposal_nember,
+                                 'duplicates_len': duplicates_len},
+                                request)
+
+    def _get_step2_informations(self, context, request):
+        related_ideas = list(dict(context.related_ideas).keys())
+        related_proposals = [list(dict(idea.related_proposals).keys()) \
+                             for idea in related_ideas]
+        related_proposals = [item for sublist in related_proposals \
+                             for item in sublist]
+        related_proposals = list(set(related_proposals))
+        len_related_proposals = len(related_proposals)
+        if context in related_proposals:
+            len_related_proposals -= 1
+
+        return renderers.render(self.step2_0_template,
+                                {'context':context,
+                                 'proposal_nember': len_related_proposals},
+                                request)
 
     def _get_step3_informations(self, context, request):
         time_delta = None
@@ -306,26 +332,20 @@ class StepsPanel(object):
                                  'support': support},
                                 request)
 
-    def _get_step1_informations(self, context, request):
-        proposal_nember = len(list(dict(context.related_proposals).keys()))
-        duplicates_len = len(context.duplicates)
-        return renderers.render(self.step1_0_template,
-                                {'context':context,
-                                 'proposal_nember': proposal_nember,
-                                 'duplicates_len': duplicates_len},
-                                request)
-
     def __call__(self):
         result = {}
         context = self._get_process_context()
         result['condition'] = isinstance(context, (Proposal, Idea))
         result['current_step'] = 1
         result['step1_message'] = ""
+        result['step2_message'] = ""
         result['step3_message'] = ""
         result['step4_message'] = ""
         if isinstance(context, Proposal):
             if 'draft' in context.state:
                 result['current_step'] = 2
+                result['step2_message'] = self._get_step2_informations(context,
+                                                                   self.request)
             elif 'published' in context.state:
                 result['current_step'] = 4
                 result['step4_message'] = self._get_step4_informations(context,
