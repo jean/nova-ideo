@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-03-24 09:54+0100\n"
+"POT-Creation-Date: 2015-03-24 09:56+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: SOUISSI <amensouissi@ecreall.com>\n"
 "Language-Team: \n"
@@ -1406,6 +1406,18 @@ msgstr ""
 msgid "Si vous n'êtes pas satisfait de votre proposition, vous pouvez la supprimer ou la modifier."
 msgstr ""
 
+#: novaideo/views/templates/panels/contextual_help_messages/idea_to_work_edit.pt:3
+msgid "Vous souhaitez modifier votre idée."
+msgstr ""
+
+#: novaideo/views/templates/panels/contextual_help_messages/idea_to_work_edit.pt:8
+msgid "Pour vous souvenir des modifications effectuées, vous pouvez saisir une note de modification."
+msgstr ""
+
+#: novaideo/views/templates/panels/contextual_help_messages/idea_to_work_edit.pt:13
+msgid "Vous pourrez retrouver vos différentes versions et les comparer dans l'onglet « Comparer des versions »."
+msgstr ""
+
 #: novaideo/views/templates/panels/contextual_help_messages/proposal_amendable.pt:3
 msgid "La relecture de la proposition a été effectuée, la proposition est en cours d'amendement."
 msgstr ""
@@ -1450,6 +1462,26 @@ msgstr ""
 
 #: novaideo/views/templates/panels/contextual_help_messages/idea_archived.pt:9
 msgid "Vous pouvez décider de supprimer définitivement une idée archivée ou de la rétablir pour la travailler de nouveau."
+msgstr ""
+
+#: novaideo/views/templates/panels/contextual_help_messages/idea_to_work.pt:4
+msgid "L'idée d'origine a été dupliquée, elle est maintenant à travailler."
+msgstr ""
+
+#: novaideo/views/templates/panels/contextual_help_messages/idea_to_work.pt:8
+msgid "Vous êtes le seul à pouvoir voir votre idée à travailler."
+msgstr ""
+
+#: novaideo/views/templates/panels/contextual_help_messages/idea_to_work.pt:12
+msgid "Si vous souhaitez la rendre publique, vous devez la publier."
+msgstr ""
+
+#: novaideo/views/templates/panels/contextual_help_messages/idea_to_work.pt:16
+msgid "Vous pouvez également modifier votre idée, l'archiver ou l'ajouter à vos favoris."
+msgstr ""
+
+#: novaideo/views/templates/panels/contextual_help_messages/idea_to_work.pt:20
+msgid "Si vous souhaitez la modifier tout en conservant cette version, vous pouvez la dupliquer."
 msgstr ""
 
 #: novaideo/views/templates/panels/contextual_help_messages/proposal_proofreading_started_owner.pt:3
