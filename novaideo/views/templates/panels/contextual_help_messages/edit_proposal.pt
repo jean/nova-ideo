@@ -1,12 +1,11 @@
-<div class="contextual-help-item principal-help">
-  <p>
+<div  class="contextual-help-item principal-help"  i18n:domain="novaideo">
+  <p i18n:translate="">
     Pour modifier votre proposition, vous disposez d'un éditeur de texte riche qui vous permet d'intégrer tout type de contenu (image, vidéo, tableau, lien).
   </p>
-  <p>
+  <p i18n:translate="">
     Vous pouvez retrouver les idées que vous avez un moment liées à votre proposition ou noter de nouvelles idées que vous pourrez retravailler par la suite.
   </p>
-  <p>
+  <p i18n:translate="">
     Vous pouvez aussi reprendre des idées existantes de la plateforme, y sélectionner des éléments de texte et les glisser-déposer dans votre proposition.
   </p>
 </div>
-
