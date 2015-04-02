@@ -7,14 +7,17 @@
 from dace.objectofcollaboration.principal.util import has_role
 
 from novaideo.content.proposal import Proposal
+from novaideo.content.amendment import Amendment
 from novaideo.core import _
 
 
 STATES_PARTICIPANT_MAPPING = {
          #Commun
-	    'draft': _('Draft'),
+	    'draft': {Amendment:_('In preparation'),
+	              'default': _('Draft')},
 	    #state by context. 'default' key is required!
-	    'published': {Proposal:_('Submited'),
+	    'published': {Proposal:_('Submitted'),
+	                  Amendment:_('Submitted'),
 	                  'default': _('Published')},
 	    'archived': _('Archived'),
         #Amendment
@@ -41,8 +44,11 @@ STATES_PARTICIPANT_MAPPING = {
 #states by memeber
 STATES_MEMBER_MAPPING = {
          #Commun
-	    'draft': _('Draft'),
-	    'published': {Proposal:_('Submited'),
+	    'draft': {Amendment:_('In preparation'),
+	              'default': _('Draft')},
+	    #state by context. 'default' key is required!
+	    'published': {Proposal:_('Submitted'),
+	                  Amendment:_('Submitted'),
 	                  'default': _('Published')},
 	    'archived': _('Archived'),
         #Amendment
