@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-04-02 15:38+0200\n"
+"POT-Creation-Date: 2015-04-07 14:02+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: SOUISSI <amensouissi@ecreall.com>\n"
 "Language-Team: \n"
@@ -16,7 +16,7 @@ msgstr ""
 #: novaideo/views/proposal_management/templates/diff_result.pt:15
 #: novaideo/views/templates/idea_result.pt:21
 #: novaideo/views/templates/proposal_result.pt:22
-#: novaideo/views/amendment_management/templates/see_amendment.pt:69
+#: novaideo/views/amendment_management/templates/see_amendment.pt:70
 #: novaideo/views/novaideo_view_manager/templates/see_proposal.pt:79
 msgid "Keywords"
 msgstr "Mots clés"
@@ -104,7 +104,7 @@ msgstr "Noter une idée"
 #: novaideo/views/idea_management/templates/see_idea.pt:28
 #: novaideo/views/proposal_management/edit_proposal.py:120
 #: novaideo/views/proposal_management/templates/amendments.pt:27
-#: novaideo/views/amendment_management/templates/see_amendment.pt:32
+#: novaideo/views/amendment_management/templates/see_amendment.pt:33
 #: novaideo/views/amendment_management/templates/description_amendments.pt:17
 #: novaideo/views/novaideo_view_manager/templates/see_proposal.pt:54
 msgid "the"
@@ -143,7 +143,7 @@ msgstr "Supprimer"
 #: novaideo/content/processes/amendment_management/behaviors.py:516
 #: novaideo/content/processes/novaideo_view_manager/definition.py:67
 #: novaideo/content/processes/novaideo_view_manager/definition.py:68
-#: novaideo/content/processes/novaideo_view_manager/behaviors.py:139
+#: novaideo/content/processes/novaideo_view_manager/behaviors.py:144
 #: novaideo/content/processes/correlation_management/behaviors.py:70
 #: novaideo/content/processes/organization_management/definition.py:65
 #: novaideo/content/processes/organization_management/behaviors.py:177
@@ -192,11 +192,9 @@ msgstr "Archiver l'idée"
 #: novaideo/views/idea_management/archive_idea.py:46
 #: novaideo/views/proposal_management/delete_proposal.py:48
 #: novaideo/views/proposal_management/make_opinion.py:44
-#: novaideo/views/templates/amendment_result.pt:19
 #: novaideo/views/amendment_management/explanation_amendment.py:74
 #: novaideo/views/amendment_management/templates/readonly/explanation_modal_item.pt:24
 #: novaideo/views/amendment_management/templates/readonly/explanation_inline_item.pt:6
-#: novaideo/content/amendment.py:97
 #: novaideo/content/processes/__init__.py:24
 #: novaideo/content/processes/__init__.py:61
 msgid "Explanation"
@@ -491,8 +489,8 @@ msgstr "(Initiée par"
 #: novaideo/views/templates/idea_result.pt:43
 #: novaideo/views/templates/proposal_result.pt:64
 #: novaideo/views/templates/proposal_result.pt:79
-#: novaideo/views/templates/amendment_result.pt:56
-#: novaideo/views/amendment_management/templates/see_amendment.pt:35
+#: novaideo/views/templates/amendment_result.pt:57
+#: novaideo/views/amendment_management/templates/see_amendment.pt:36
 #: novaideo/views/amendment_management/templates/description_amendments.pt:20
 #: novaideo/views/amendment_management/templates/description_amendments.pt:56
 #: novaideo/views/novaideo_view_manager/templates/see_proposal.pt:57
@@ -684,18 +682,18 @@ msgid "Log In as Another User"
 msgstr "Se connecter avec un autre profil"
 
 #: novaideo/views/user_management/templates/see_person.pt:16
-#: novaideo/views/templates/person_result.pt:20
+#: novaideo/views/templates/person_result.pt:22
 #: novaideo/content/person.py:149
 msgid "Preferences"
 msgstr "Centres d'intérêt"
 
 #: novaideo/views/user_management/templates/see_person.pt:33
-#: novaideo/views/templates/person_result.pt:37
+#: novaideo/views/templates/person_result.pt:39
 msgid "No preferences"
 msgstr "Aucun centre d'intérêt"
 
 #: novaideo/views/user_management/templates/see_person.pt:40
-#: novaideo/views/templates/person_result.pt:44
+#: novaideo/views/templates/person_result.pt:46
 msgid "Member since"
 msgstr "Membre depuis le"
 
@@ -988,9 +986,9 @@ msgstr "Modifier la proposition"
 
 #: novaideo/views/proposal_management/edit_proposal.py:42
 #: novaideo/views/amendment_management/explanation_amendment.py:26
-#: novaideo/views/novaideo_view_manager/search.py:277
+#: novaideo/views/novaideo_view_manager/search.py:299
 #: novaideo/content/correlation.py:54
-#: novaideo/content/comment.py:32
+#: novaideo/content/comment.py:31
 #: novaideo/content/person.py:53
 #: novaideo/content/person.py:61
 msgid "- Select -"
@@ -1105,7 +1103,7 @@ msgstr "Corriger"
 
 #: novaideo/views/proposal_management/templates/diff_result.pt:9
 #: novaideo/views/templates/proposal_result.pt:18
-#: novaideo/views/amendment_management/templates/see_amendment.pt:63
+#: novaideo/views/amendment_management/templates/see_amendment.pt:64
 #: novaideo/views/novaideo_view_manager/templates/see_proposal.pt:73
 #: novaideo/content/correction.py:46
 #: novaideo/content/proposal.py:73
@@ -1130,7 +1128,7 @@ msgid "Vous venez de transformer une idée en proposition, vous devez maintenant
 msgstr ""
 
 #: novaideo/views/proposal_management/templates/amendments.pt:23
-#: novaideo/views/amendment_management/templates/see_amendment.pt:28
+#: novaideo/views/amendment_management/templates/see_amendment.pt:29
 #: novaideo/views/amendment_management/templates/description_amendments.pt:13
 msgid "(Amended version by"
 msgstr "(Version amendée par"
@@ -1198,7 +1196,7 @@ msgstr "Modifiée le"
 
 #: novaideo/views/templates/idea_result.pt:45
 #: novaideo/views/templates/proposal_result.pt:66
-#: novaideo/views/templates/amendment_result.pt:58
+#: novaideo/views/templates/amendment_result.pt:59
 msgid "by"
 msgstr "par"
 
@@ -1217,7 +1215,17 @@ msgstr "Groupe de travail"
 msgid "by its working group"
 msgstr "par son groupe de travail"
 
-#: novaideo/views/templates/amendment_result.pt:31
+#: novaideo/views/templates/amendment_result.pt:20
+#: novaideo/views/amendment_management/submit.py:85
+#: novaideo/views/amendment_management/submit.py:122
+#: novaideo/views/amendment_management/submit.py:83
+#: novaideo/views/amendment_management/submit.py:120
+#: novaideo/views/amendment_management/templates/see_amendment.pt:58
+#: novaideo/views/amendment_management/templates/description_amendments.pt:36
+msgid "Justification"
+msgstr "Justification"
+
+#: novaideo/views/templates/amendment_result.pt:32
 #: novaideo/views/amendment_management/templates/readonly/explanation_modal_item.pt:32
 #: novaideo/views/amendment_management/templates/readonly/explanation_inline_item.pt:14
 #: novaideo/content/proposal.py:85
@@ -1227,7 +1235,7 @@ msgstr "par son groupe de travail"
 msgid "Related ideas"
 msgstr "Idées liées"
 
-#: novaideo/views/templates/amendment_result.pt:50
+#: novaideo/views/templates/amendment_result.pt:51
 msgid "Proposed the"
 msgstr "Proposé le"
 
@@ -1409,7 +1417,7 @@ msgstr ""
 
 #: novaideo/views/templates/panels/contextual_help_messages/idea_sub_helps.pt:25
 #: novaideo/views/templates/panels/contextual_help_messages/proposal_sub_helps.pt:47
-#: novaideo/views/templates/panels/contextual_help_messages/amendment_sub_helps.pt:15
+#: novaideo/views/templates/panels/contextual_help_messages/amendment_sub_helps.pt:18
 msgid "Pour commencer un fil de discussion, il vous suffit de préciser votre intention et le message que vous souhaitez communiquer aux autres."
 msgstr ""
 
@@ -1420,7 +1428,7 @@ msgstr ""
 
 #: novaideo/views/templates/panels/contextual_help_messages/idea_sub_helps.pt:31
 #: novaideo/views/templates/panels/contextual_help_messages/proposal_sub_helps.pt:53
-#: novaideo/views/templates/panels/contextual_help_messages/amendment_sub_helps.pt:21
+#: novaideo/views/templates/panels/contextual_help_messages/amendment_sub_helps.pt:24
 msgid "Vous pouvez également associer à vos messages tout type d'éléments figurant dans la plateforme. En cliquant sur « Associations », vous retrouvez les fils de discussion ayant des éléments associés."
 msgstr ""
 
@@ -1509,7 +1517,7 @@ msgid "Vous avez décidé d'améliorer la proposition."
 msgstr ""
 
 #: novaideo/views/templates/panels/contextual_help_messages/proposal_improve.pt:7
-msgid "Vos améliorations sont à effectuer directement dans le titre, le résumé, les mots clés et le texte de la proposition."
+msgid "Vos améliorations sont à effectuer directement dans le texte de la proposition."
 msgstr ""
 
 #: novaideo/views/templates/panels/contextual_help_messages/amendment_draft_explanation.pt:3
@@ -1557,14 +1565,18 @@ msgid "Si vous n'êtes pas satisfait de votre version améliorée, vous pouvez l
 msgstr ""
 
 #: novaideo/views/templates/panels/contextual_help_messages/amendment_sub_helps.pt:5
-msgid "Tout membre peut communiquer à tout autre membre de la plateforme, ainsi qu'à toute personne externe en saisissant directement son courriel, une version amendée qui a été soumise. Les personnes externes ont un accès à la plateforme, mais ne peuvent s'y connecter que s'ils deviennent membres."
+msgid "Tout membre peut communiquer à tout autre membre de la plateforme, ainsi qu'à toute personne externe en saisissant directement son courriel, une version amendée qui a été soumise."
 msgstr ""
 
-#: novaideo/views/templates/panels/contextual_help_messages/amendment_sub_helps.pt:12
+#: novaideo/views/templates/panels/contextual_help_messages/amendment_sub_helps.pt:8
+msgid "Les personnes externes ont un accès à la plateforme, mais ne peuvent s'y connecter que s'ils deviennent membres."
+msgstr ""
+
+#: novaideo/views/templates/panels/contextual_help_messages/amendment_sub_helps.pt:15
 msgid "Toute version amendée qui a été soumise peut être discutée entre les participants du groupe de travail."
 msgstr ""
 
-#: novaideo/views/templates/panels/contextual_help_messages/amendment_sub_helps.pt:18
+#: novaideo/views/templates/panels/contextual_help_messages/amendment_sub_helps.pt:21
 msgid "Tout participant au groupe de travail peut vous répondre, comme vous pouvez répondre à tout message d'un fil de discussion."
 msgstr ""
 
@@ -1865,7 +1877,7 @@ msgstr "Communiquer la version amendée à des tiers"
 msgid "Justification item"
 msgstr "Justification de l'item"
 
-#: novaideo/views/amendment_management/submit.py:186
+#: novaideo/views/amendment_management/submit.py:188
 #: novaideo/content/processes/amendment_management/behaviors.py:342
 msgid "Prepare amendments"
 msgstr "Préparer des amendements"
@@ -1873,15 +1885,6 @@ msgstr "Préparer des amendements"
 #: novaideo/views/amendment_management/submit.py:75
 msgid "Explanations"
 msgstr "Explications"
-
-#: novaideo/views/amendment_management/submit.py:85
-#: novaideo/views/amendment_management/submit.py:122
-#: novaideo/views/amendment_management/submit.py:83
-#: novaideo/views/amendment_management/submit.py:120
-#: novaideo/views/amendment_management/templates/see_amendment.pt:57
-#: novaideo/views/amendment_management/templates/description_amendments.pt:36
-msgid "Justification"
-msgstr "Justification"
 
 #: novaideo/views/amendment_management/submit.py:105
 msgid "Group your improvements in amendments"
@@ -1899,12 +1902,12 @@ msgstr ""
 msgid "Vous avez donné des explications à l'ensemble de vos améliorations. Vous pouvez maintenant préparer des amendements que vous pourrez soumettre aux autres participants."
 msgstr ""
 
-#: novaideo/views/amendment_management/templates/see_amendment.pt:37
+#: novaideo/views/amendment_management/templates/see_amendment.pt:38
 #: novaideo/views/amendment_management/templates/description_amendments.pt:22
 msgid "of the proposal"
 msgstr "de la proposition"
 
-#: novaideo/views/amendment_management/templates/see_amendment.pt:40
+#: novaideo/views/amendment_management/templates/see_amendment.pt:41
 #: novaideo/views/amendment_management/templates/description_amendments.pt:25
 msgid ", duplicated from the amended version"
 msgstr ", dupliquée à partir de la version amendée"
@@ -2446,6 +2449,10 @@ msgstr "Reprendre une explication existante"
 #: novaideo/content/amendment.py:75
 msgid "Choose the imrovement to apply"
 msgstr "Indiquer l'amélioration correspondante"
+
+#: novaideo/content/amendment.py:97
+msgid "Give a specific explanation"
+msgstr "Donner une explication spécifique"
 
 #: novaideo/content/amendment.py:108
 msgid "Choose related ideas."
@@ -3006,8 +3013,9 @@ msgid "Discuss the amendment"
 msgstr "Discuter l'amendement"
 
 #: novaideo/content/processes/amendment_management/behaviors.py:343
-msgid "Submit my amendments"
-msgstr "Soumettre mes amendements"
+#, fuzzy
+msgid "Submit amendments"
+msgstr "Soumettre les amendements"
 
 #: novaideo/content/processes/novaideo_view_manager/definition.py:39
 #: novaideo/content/processes/novaideo_view_manager/definition.py:40
