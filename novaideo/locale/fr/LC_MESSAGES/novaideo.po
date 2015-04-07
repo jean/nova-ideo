@@ -3013,7 +3013,6 @@ msgid "Discuss the amendment"
 msgstr "Discuter l'amendement"
 
 #: novaideo/content/processes/amendment_management/behaviors.py:343
-#, fuzzy
 msgid "Submit amendments"
 msgstr "Soumettre les amendements"
 
