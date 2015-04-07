@@ -1244,6 +1244,7 @@ ins {
 .search-item .content-image{
     min-width: 5%;
     display: table-cell;
+    vertical-align: center;
 }
 
 .search-item{
