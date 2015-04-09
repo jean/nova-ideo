@@ -597,7 +597,7 @@ msgstr "Organisation"
 
 #: novaideo/views/user_management/deactivate.py:23
 msgid "Deactivate the member"
-msgstr "Désactivier le membre"
+msgstr "Désinscrire le membre"
 
 #: novaideo/views/user_management/login.py:38
 #: novaideo/content/processes/user_management/definition.py:50
@@ -676,7 +676,7 @@ msgstr "Se déconnecter"
 #: novaideo/content/processes/user_management/definition.py:71
 #: novaideo/content/processes/user_management/behaviors.py:271
 msgid "Assign roles"
-msgstr ""
+msgstr "Assigner des rôles"
 
 #: novaideo/views/user_management/assign_roles.py:39
 #: novaideo/content/invitation.py:43
@@ -2580,7 +2580,7 @@ msgstr "Actif"
 #: novaideo/content/processes/__init__.py:44
 #: novaideo/content/processes/__init__.py:81
 msgid "Deactivated"
-msgstr "Désactivié"
+msgstr "Désactivé"
 
 #: novaideo/content/processes/__init__.py:46
 #: novaideo/content/processes/__init__.py:83
@@ -2780,7 +2780,7 @@ msgstr ""
 #: novaideo/content/processes/user_management/definition.py:63
 #: novaideo/content/processes/user_management/behaviors.py:202
 msgid "Deactivate the profile"
-msgstr "Désactivier le profil"
+msgstr "Désinscrire le profil"
 
 #: novaideo/content/processes/user_management/definition.py:66
 #: novaideo/content/processes/user_management/definition.py:67
