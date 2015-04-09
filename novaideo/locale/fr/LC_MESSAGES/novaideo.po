@@ -466,7 +466,7 @@ msgstr "Pièce jointe :"
 
 #: novaideo/views/user_management/deactivate.py:23
 msgid "Deactivate the member"
-msgstr "Désactivier le membre"
+msgstr "Désinscrire le membre"
 
 #: novaideo/views/user_management/login.py:37
 #: novaideo/content/processes/user_management/definition.py:49
@@ -2222,7 +2222,7 @@ msgstr "Actif"
 #: novaideo/content/processes/__init__.py:38
 #: novaideo/content/processes/__init__.py:69
 msgid "Deactivated"
-msgstr "Désactivié"
+msgstr "Désactivé"
 
 #: novaideo/content/processes/__init__.py:40
 #: novaideo/content/processes/__init__.py:71
@@ -2352,7 +2352,7 @@ msgstr ""
 #: novaideo/content/processes/user_management/definition.py:61
 #: novaideo/content/processes/user_management/definition.py:62
 msgid "Deactivate"
-msgstr "Désactivier"
+msgstr "Désactiver"
 
 #: novaideo/content/processes/user_management/definition.py:65
 #: novaideo/content/processes/user_management/definition.py:66
@@ -2366,7 +2366,7 @@ msgstr ""
 
 #: novaideo/content/processes/user_management/behaviors.py:189
 msgid "Deactivate the profile"
-msgstr "Désactivier le profil"
+msgstr "Désinscrire le profil"
 
 #: novaideo/content/processes/user_management/behaviors.py:222
 msgid "Activate the profile"
