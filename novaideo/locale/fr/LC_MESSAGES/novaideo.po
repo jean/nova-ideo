@@ -2366,7 +2366,7 @@ msgstr ""
 
 #: novaideo/content/processes/user_management/behaviors.py:189
 msgid "Deactivate the profile"
-msgstr "Désinscrire le profil"
+msgstr "Désinscrire le membre"
 
 #: novaideo/content/processes/user_management/behaviors.py:222
 msgid "Activate the profile"
