@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-04-07 14:11+0200\n"
+"POT-Creation-Date: 2015-04-30 13:21+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: SOUISSI <amensouissi@ecreall.com>\n"
 "Language-Team: \n"
@@ -138,7 +138,7 @@ msgstr "Détails"
 
 #: novaideo/views/idea_management/see_idea.py:84
 #: novaideo/views/amendment_management/see_amendment.py:109
-#: novaideo/views/novaideo_view_manager/see_proposal.py:169
+#: novaideo/views/novaideo_view_manager/see_proposal.py:173
 msgid "actions"
 msgstr "actions"
 
@@ -483,21 +483,21 @@ msgstr "La connexion a échouée"
 msgid "Activate the member"
 msgstr "Activer le membre"
 
-#: novaideo/views/user_management/reset_password.py:34
-#: novaideo/views/user_management/reset_password.py:138
+#: novaideo/views/user_management/reset_password.py:41
+#: novaideo/views/user_management/reset_password.py:145
 #: novaideo/content/processes/idea_management/behaviors.py:385
 msgid "Send"
 msgstr "Envoyer"
 
-#: novaideo/views/user_management/reset_password.py:103
+#: novaideo/views/user_management/reset_password.py:110
 msgid "Alert for reset"
 msgstr "Alerte pour supression"
 
-#: novaideo/views/user_management/reset_password.py:117
+#: novaideo/views/user_management/reset_password.py:124
 msgid "Request Password Reset"
 msgstr "Lancer la procédure de changement de mot de passe"
 
-#: novaideo/views/user_management/reset_password.py:128
+#: novaideo/views/user_management/reset_password.py:135
 #: novaideo/views/proposal_management/submit_proposal.py:93
 #: novaideo/views/amendment_management/submit.py:160
 #: novaideo/content/processes/proposal_management/definition.py:328
@@ -505,17 +505,17 @@ msgstr "Lancer la procédure de changement de mot de passe"
 msgid "Submit"
 msgstr "Soumettre"
 
-#: novaideo/views/user_management/reset_password.py:165
+#: novaideo/views/user_management/reset_password.py:172
 msgid "Reset Password"
 msgstr "Réinitialiser le mot de passe"
 
-#: novaideo/views/user_management/reset_password.py:98
+#: novaideo/views/user_management/reset_password.py:105
 #: novaideo/views/user_management/templates/login.pt:14
-#: novaideo/content/person.py:134
+#: novaideo/content/person.py:143
 msgid "Login (email)"
 msgstr "Identifiant (courriel)"
 
-#: novaideo/views/user_management/reset_password.py:155
+#: novaideo/views/user_management/reset_password.py:162
 #: novaideo/views/user_management/edit.py:48
 msgid "New Password"
 msgstr "Nouveau mot de passe"
@@ -549,12 +549,12 @@ msgstr "Se déconnecter"
 
 #: novaideo/views/user_management/templates/login.pt:5
 #: novaideo/views/user_management/templates/login.pt:20
-#: novaideo/views/templates/panels/usermenu.pt:70
+#: novaideo/views/templates/panels/usermenu.pt:79
 msgid "Log In"
 msgstr "Se connecter"
 
 #: novaideo/views/user_management/templates/login.pt:17
-#: novaideo/content/person.py:173
+#: novaideo/content/person.py:182
 msgid "Password"
 msgstr "Mot de passe"
 
@@ -576,7 +576,7 @@ msgstr "Se connecter avec un autre profil"
 
 #: novaideo/views/user_management/templates/see_person.pt:16
 #: novaideo/views/templates/person_result.pt:22
-#: novaideo/content/person.py:123
+#: novaideo/content/person.py:132
 msgid "Preferences"
 msgstr "Centres d'intérêt"
 
@@ -612,7 +612,7 @@ msgstr "Procès-verbal"
 #: novaideo/views/ballot_processes/majorityjudgment/vote.py:166
 #: novaideo/views/ballot_processes/majorityjudgment/vote.py:232
 #: novaideo/views/proposal_management/first_participate.py:48
-#: novaideo/views/novaideo_view_manager/see_proposal.py:113
+#: novaideo/views/novaideo_view_manager/see_proposal.py:117
 #: novaideo/content/processes/ballot_processes/__init__.py:31
 #: novaideo/content/processes/ballot_processes/rangevoting/definition.py:42
 #: novaideo/content/processes/ballot_processes/rangevoting/definition.py:43
@@ -697,7 +697,17 @@ msgstr "Choix"
 msgid "FPTP vote"
 msgstr "FPTP vote"
 
-#: novaideo/views/ballot_processes/fptp/vote.py:65
+#: novaideo/views/ballot_processes/fptp/vote.py:57
+#: novaideo/views/proposal_management/edit_proposal.py:42
+#: novaideo/views/amendment_management/explanation_amendment.py:26
+#: novaideo/views/novaideo_view_manager/search.py:299
+#: novaideo/content/correlation.py:54
+#: novaideo/content/comment.py:31
+#: novaideo/content/person.py:48
+msgid "- Select -"
+msgstr "- Sélectionner -"
+
+#: novaideo/views/ballot_processes/fptp/vote.py:66
 #: novaideo/views/proposal_management/submit_proposal.py:87
 msgid "Choices"
 msgstr "Choix"
@@ -876,15 +886,6 @@ msgstr "Noter une nouvelle idée"
 #: novaideo/content/processes/proposal_management/behaviors.py:553
 msgid "Edit the proposal"
 msgstr "Modifier la proposition"
-
-#: novaideo/views/proposal_management/edit_proposal.py:42
-#: novaideo/views/amendment_management/explanation_amendment.py:26
-#: novaideo/views/novaideo_view_manager/search.py:299
-#: novaideo/content/correlation.py:54
-#: novaideo/content/comment.py:31
-#: novaideo/content/person.py:46
-msgid "- Select -"
-msgstr "- Sélectionner -"
 
 #: novaideo/views/proposal_management/delete_proposal.py:26
 msgid "Alert for deletion"
@@ -1260,10 +1261,14 @@ msgid "${icon} Account"
 msgstr "${icon} Mon profil"
 
 #: novaideo/views/templates/panels/usermenu.pt:51
+msgid "${icon} Edit my account"
+msgstr "${icon} Editer mon profil"
+
+#: novaideo/views/templates/panels/usermenu.pt:60
 msgid "${icon} Log Out"
 msgstr "${icon} Se déconnecter"
 
-#: novaideo/views/templates/panels/usermenu.pt:79
+#: novaideo/views/templates/panels/usermenu.pt:88
 msgid "Registration"
 msgstr "S'inscrire"
 
@@ -1765,6 +1770,19 @@ msgstr ""
 msgid "The intention of changes"
 msgstr "L'intention des modifications"
 
+#: novaideo/views/http_views/templates/404.pt:11
+msgid "Document not found!"
+msgstr "Document non trouvé"
+
+#: novaideo/views/http_views/templates/404.pt:19
+#: novaideo/views/http_views/templates/500.pt:19
+msgid "Homepage"
+msgstr "Accueil"
+
+#: novaideo/views/http_views/templates/500.pt:11
+msgid "An error has occurred!"
+msgstr ""
+
 #: novaideo/views/novaideo_view_manager/see_my_selections.py:24
 msgid "Aucune éléments en favori"
 msgstr ""
@@ -2065,7 +2083,7 @@ msgid "Minimum number of tokens by member"
 msgstr ""
 
 #: novaideo/content/novaideo_application.py:63
-#: novaideo/content/person.py:158
+#: novaideo/content/person.py:167
 msgid "Title"
 msgstr "Civilité"
 
@@ -2153,26 +2171,30 @@ msgstr "Choisissez le contenu à associer"
 msgid "Candidacy"
 msgstr ""
 
-#: novaideo/content/person.py:63
+#: novaideo/content/person.py:65
 #, python-format
 msgid "${email} email address already in use"
 msgstr "Adresse courriel ${email} déjà utilisée"
 
-#: novaideo/content/person.py:140
+#: novaideo/content/person.py:149
 msgid "Picture"
 msgstr "Portrait"
 
-#: novaideo/content/person.py:147
+#: novaideo/content/person.py:156
 msgid "First name"
 msgstr "Prénom"
 
-#: novaideo/content/person.py:152
+#: novaideo/content/person.py:161
 msgid "Last name"
 msgstr "Nom"
 
-#: novaideo/content/person.py:163
+#: novaideo/content/person.py:172
 msgid "Locale"
 msgstr "Langue"
+
+#: novaideo/content/person.py:188
+msgid "I have read and accept the terms and conditions"
+msgstr ""
 
 #: novaideo/content/processes/__init__.py:22
 #: novaideo/content/processes/__init__.py:53
