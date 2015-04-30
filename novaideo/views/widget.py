@@ -12,6 +12,10 @@ from pyramid import renderers
 from pontus.widget import SequenceWidget, Select2Widget
 
 
+class TOUCheckboxWidget(deform.widget.CheckboxWidget):
+    template = 'novaideo:views/templates/terms_of_use_checkbox.pt'
+    requirements = ( ('toucheckbox', None), )
+
 
 class LimitedTextAreaWidget(deform.widget.TextAreaWidget):
     template = 'novaideo:views/templates/textarea.pt'
@@ -85,6 +89,9 @@ class DragDropMappingWidget(deform.widget.MappingWidget):
     template = 'novaideo:views/templates/dragdrop_sequence/mapping.pt'
     item_template = 'novaideo:views/templates/dragdrop_sequence/mapping_item.pt'
 
+
+default_resource_registry.set_js_resources('toucheckbox', None,
+               'novaideo:static/js/toucheckbox.js'  )
 
 default_resource_registry.set_js_resources('addnewidea', None, 
                          'novaideo:static/js/add_new_idea.js'  )
